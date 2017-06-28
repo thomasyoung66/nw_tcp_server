@@ -1,0 +1,1228 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AFD_POLL_HANDLE_INFO	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} AFD_POLL_HANDLE_INFO, *PAFD_POLL_HANDLE_INFO;$/;"	t	typeref:struct:_AFD_POLL_HANDLE_INFO
+AFD_POLL_INFO	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} AFD_POLL_INFO, *PAFD_POLL_INFO;$/;"	t	typeref:struct:_AFD_POLL_INFO
+ALL_CFLAGS	Makefile	/^ALL_CFLAGS      = $(CFLAGS)  -I$(ALL_INC_DIR)$/;"	m
+ALL_INC_DIR	Makefile	/^ALL_INC_DIR     = $(LOCAL_INC_DIR) $(GLOBAL_INC_DIR)$/;"	m
+ALL_LFLAGS	Makefile	/^ALL_LFLAGS      = $(LFLAGS)  -L$(ALL_LIB_DIR) $(SYS_LIBS) $(LOCAL_LIBS)$/;"	m
+ALL_LIB_DIR	Makefile	/^ALL_LIB_DIR     = $(LOCAL_LIB_DIR) $(GLOBAL_LIB_DIR)$/;"	m
+ARRAY_SIZE	../../third_party/libuv-v1.9.1/src/uv-common.h	48;"	d
+ARRAY_SIZE	task.h	70;"	d
+ASSERT	task.h	96;"	d
+BENCHMARK_IMPL	task.h	122;"	d
+CC	Makefile	/^CC              = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS          = -O2 -g  -I..\/..\/third_party\/libuv-v1.9.1\/include\/    # Do not optimize. Produce debugging information.$/;"	m
+CONDITION_VARIABLE	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef PVOID CONDITION_VARIABLE, *PCONDITION_VARIABLE;$/;"	t
+CPP_EXTENSION	Makefile	/^CPP_EXTENSION  = cc$/;"	m
+CPP_SOURCES	Makefile	/^CPP_SOURCES     = $/;"	m
+C_SOURCES	Makefile	/^C_SOURCES       = main.c$/;"	m
+EXECUTABLE	Makefile	/^EXECUTABLE      = main$/;"	m
+Events	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  ULONG Events;$/;"	m	struct:_AFD_POLL_HANDLE_INFO
+Exclusive	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  ULONG Exclusive;$/;"	m	struct:_AFD_POLL_INFO
+FATAL	task.h	82;"	d
+F_OK	../../third_party/libuv-v1.9.1/include/uv-win.h	639;"	d
+GLOBAL_INC_DIR	Makefile	/^GLOBAL_INC_DIR  = $/;"	m
+GLOBAL_LIB_DIR	Makefile	/^GLOBAL_LIB_DIR  = $/;"	m
+HAVE_DIRENT_TYPES	../../third_party/libuv-v1.9.1/include/uv-unix.h	150;"	d
+HAVE_DIRENT_TYPES	../../third_party/libuv-v1.9.1/include/uv-win.h	293;"	d
+HEAP_EXPORT	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^HEAP_EXPORT(struct heap_node* heap_min(const struct heap* heap)) {$/;"	f
+HEAP_EXPORT	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^HEAP_EXPORT(void heap_dequeue(struct heap* heap, heap_compare_fn less_than)) {$/;"	f
+HEAP_EXPORT	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^HEAP_EXPORT(void heap_init(struct heap* heap)) {$/;"	f
+HEAP_EXPORT	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^HEAP_EXPORT(void heap_insert(struct heap* heap,$/;"	f
+HEAP_EXPORT	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^HEAP_EXPORT(void heap_remove(struct heap* heap,$/;"	f
+HEAP_EXPORT	../../third_party/libuv-v1.9.1/src/heap-inl.h	22;"	d
+HEAP_EXPORT	../../third_party/libuv-v1.9.1/src/heap-inl.h	243;"	d
+HEAP_EXPORT	../../third_party/libuv-v1.9.1/src/heap-inl.h	24;"	d
+HELPER_IMPL	task.h	126;"	d
+Handle	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  HANDLE Handle;$/;"	m	struct:_AFD_POLL_HANDLE_INFO
+Handles	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  AFD_POLL_HANDLE_INFO Handles[1];$/;"	m	struct:_AFD_POLL_INFO
+INT16_C	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	231;"	d
+INT16_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	135;"	d
+INT16_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	134;"	d
+INT32_C	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	232;"	d
+INT32_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	137;"	d
+INT32_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	136;"	d
+INT64_C	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	233;"	d
+INT64_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	139;"	d
+INT64_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	138;"	d
+INT8_C	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	230;"	d
+INT8_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	133;"	d
+INT8_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	132;"	d
+INTMAX_C	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	241;"	d
+INTMAX_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	186;"	d
+INTMAX_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	185;"	d
+INTPTR_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	176;"	d
+INTPTR_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	180;"	d
+INTPTR_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	175;"	d
+INTPTR_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	179;"	d
+INT_FAST16_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	163;"	d
+INT_FAST16_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	162;"	d
+INT_FAST32_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	165;"	d
+INT_FAST32_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	164;"	d
+INT_FAST64_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	167;"	d
+INT_FAST64_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	166;"	d
+INT_FAST8_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	161;"	d
+INT_FAST8_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	160;"	d
+INT_LEAST16_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	149;"	d
+INT_LEAST16_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	148;"	d
+INT_LEAST32_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	151;"	d
+INT_LEAST32_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	150;"	d
+INT_LEAST64_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	153;"	d
+INT_LEAST64_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	152;"	d
+INT_LEAST8_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	147;"	d
+INT_LEAST8_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	146;"	d
+LFLAGS	Makefile	/^LFLAGS          = -g -lssl -L..\/..\/third_party\/libuv-v1.9.1\/.libs\/ -lrt$/;"	m
+LOCALE_INVARIANT	../../third_party/libuv-v1.9.1/include/uv-win.h	43;"	d
+LOCAL_INC_DIR	Makefile	/^LOCAL_INC_DIR   = .$/;"	m
+LOCAL_LIBS	Makefile	/^LOCAL_LIBS      = $/;"	m
+LOCAL_LIB_DIR	Makefile	/^LOCAL_LIB_DIR   = .$/;"	m
+LPFN_ACCEPTEX	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef BOOL PASCAL (*LPFN_ACCEPTEX)$/;"	t
+LPFN_CONNECTEX	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef BOOL PASCAL (*LPFN_CONNECTEX)$/;"	t
+LPFN_DISCONNECTEX	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef BOOL PASCAL (*LPFN_DISCONNECTEX)$/;"	t
+LPFN_GETACCEPTEXSOCKADDRS	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef void PASCAL (*LPFN_GETACCEPTEXSOCKADDRS)$/;"	t
+LPFN_TRANSMITFILE	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef BOOL PASCAL (*LPFN_TRANSMITFILE)$/;"	t
+LPFN_WSARECV	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef int (WSAAPI* LPFN_WSARECV)$/;"	t
+LPFN_WSARECVFROM	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef int (WSAAPI* LPFN_WSARECVFROM)$/;"	t
+LPWSAPOLLFD	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} WSAPOLLFD, *PWSAPOLLFD, *LPWSAPOLLFD;$/;"	t	typeref:struct:pollfd
+MAKE_VALGRIND_HAPPY	task.h	111;"	d
+MAX_PIPENAME_LEN	../../third_party/libuv-v1.9.1/include/uv-win.h	63;"	d
+MAX_THREADPOOL_SIZE	../../third_party/libuv-v1.9.1/src/threadpool.c	42;"	d	file:
+NI_MAXHOST	../../third_party/libuv-v1.9.1/include/uv-unix.h	65;"	d
+NI_MAXSERV	../../third_party/libuv-v1.9.1/include/uv-unix.h	69;"	d
+NTSTATUS	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef LONG NTSTATUS;$/;"	t
+NumberOfHandles	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  ULONG NumberOfHandles;$/;"	m	struct:_AFD_POLL_INFO
+OBJECTS	Makefile	/^OBJECTS         = ${C_SOURCES:.c=.o} $/;"	m
+PAFD_POLL_HANDLE_INFO	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} AFD_POLL_HANDLE_INFO, *PAFD_POLL_HANDLE_INFO;$/;"	t	typeref:struct:_AFD_POLL_HANDLE_INFO
+PAFD_POLL_INFO	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} AFD_POLL_INFO, *PAFD_POLL_INFO;$/;"	t	typeref:struct:_AFD_POLL_INFO
+PCONDITION_VARIABLE	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef PVOID CONDITION_VARIABLE, *PCONDITION_VARIABLE;$/;"	t
+PIPE	task.h	/^  PIPE$/;"	e	enum:__anon2
+PNTSTATUS	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef NTSTATUS *PNTSTATUS;$/;"	t
+PREREQUISITES	Makefile	/^PREREQUISITES   = $(addprefix .,${C_SOURCES:.c=.d} )$/;"	m
+PSRWLOCK	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef RTL_SRWLOCK SRWLOCK, *PSRWLOCK;$/;"	t
+PTHREAD_BARRIER_SERIAL_THREAD	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	23;"	d
+PTRDIFF_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	193;"	d
+PTRDIFF_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	196;"	d
+PTRDIFF_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	192;"	d
+PTRDIFF_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	195;"	d
+PWSAPOLLFD	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} WSAPOLLFD, *PWSAPOLLFD, *LPWSAPOLLFD;$/;"	t	typeref:struct:pollfd
+QUEUE	../../third_party/libuv-v1.9.1/src/queue.h	/^typedef void *QUEUE[2];$/;"	t
+QUEUE_ADD	../../third_party/libuv-v1.9.1/src/queue.h	52;"	d
+QUEUE_DATA	../../third_party/libuv-v1.9.1/src/queue.h	30;"	d
+QUEUE_EMPTY	../../third_party/libuv-v1.9.1/src/queue.h	39;"	d
+QUEUE_FOREACH	../../third_party/libuv-v1.9.1/src/queue.h	36;"	d
+QUEUE_HEAD	../../third_party/libuv-v1.9.1/src/queue.h	42;"	d
+QUEUE_H_	../../third_party/libuv-v1.9.1/src/queue.h	17;"	d
+QUEUE_INIT	../../third_party/libuv-v1.9.1/src/queue.h	45;"	d
+QUEUE_INSERT_HEAD	../../third_party/libuv-v1.9.1/src/queue.h	83;"	d
+QUEUE_INSERT_TAIL	../../third_party/libuv-v1.9.1/src/queue.h	92;"	d
+QUEUE_MOVE	../../third_party/libuv-v1.9.1/src/queue.h	72;"	d
+QUEUE_NEXT	../../third_party/libuv-v1.9.1/src/queue.h	24;"	d
+QUEUE_NEXT_PREV	../../third_party/libuv-v1.9.1/src/queue.h	27;"	d
+QUEUE_PREV	../../third_party/libuv-v1.9.1/src/queue.h	25;"	d
+QUEUE_PREV_NEXT	../../third_party/libuv-v1.9.1/src/queue.h	26;"	d
+QUEUE_REMOVE	../../third_party/libuv-v1.9.1/src/queue.h	101;"	d
+QUEUE_SPLIT	../../third_party/libuv-v1.9.1/src/queue.h	61;"	d
+RB_AUGMENT	../../third_party/libuv-v1.9.1/include/tree.h	339;"	d
+RB_BLACK	../../third_party/libuv-v1.9.1/include/tree.h	310;"	d
+RB_COLOR	../../third_party/libuv-v1.9.1/include/tree.h	323;"	d
+RB_EMPTY	../../third_party/libuv-v1.9.1/include/tree.h	325;"	d
+RB_ENTRY	../../third_party/libuv-v1.9.1/include/tree.h	312;"	d
+RB_FIND	../../third_party/libuv-v1.9.1/include/tree.h	731;"	d
+RB_FOREACH	../../third_party/libuv-v1.9.1/include/tree.h	738;"	d
+RB_FOREACH_FROM	../../third_party/libuv-v1.9.1/include/tree.h	743;"	d
+RB_FOREACH_REVERSE	../../third_party/libuv-v1.9.1/include/tree.h	753;"	d
+RB_FOREACH_REVERSE_FROM	../../third_party/libuv-v1.9.1/include/tree.h	758;"	d
+RB_FOREACH_REVERSE_SAFE	../../third_party/libuv-v1.9.1/include/tree.h	763;"	d
+RB_FOREACH_SAFE	../../third_party/libuv-v1.9.1/include/tree.h	748;"	d
+RB_GENERATE	../../third_party/libuv-v1.9.1/include/tree.h	402;"	d
+RB_GENERATE_INTERNAL	../../third_party/libuv-v1.9.1/include/tree.h	406;"	d
+RB_GENERATE_STATIC	../../third_party/libuv-v1.9.1/include/tree.h	404;"	d
+RB_HEAD	../../third_party/libuv-v1.9.1/include/tree.h	298;"	d
+RB_INF	../../third_party/libuv-v1.9.1/include/tree.h	727;"	d
+RB_INIT	../../third_party/libuv-v1.9.1/include/tree.h	306;"	d
+RB_INITIALIZER	../../third_party/libuv-v1.9.1/include/tree.h	303;"	d
+RB_INSERT	../../third_party/libuv-v1.9.1/include/tree.h	729;"	d
+RB_LEFT	../../third_party/libuv-v1.9.1/include/tree.h	320;"	d
+RB_MAX	../../third_party/libuv-v1.9.1/include/tree.h	736;"	d
+RB_MIN	../../third_party/libuv-v1.9.1/include/tree.h	735;"	d
+RB_NEGINF	../../third_party/libuv-v1.9.1/include/tree.h	726;"	d
+RB_NEXT	../../third_party/libuv-v1.9.1/include/tree.h	733;"	d
+RB_NFIND	../../third_party/libuv-v1.9.1/include/tree.h	732;"	d
+RB_PARENT	../../third_party/libuv-v1.9.1/include/tree.h	322;"	d
+RB_PREV	../../third_party/libuv-v1.9.1/include/tree.h	734;"	d
+RB_PROTOTYPE	../../third_party/libuv-v1.9.1/include/tree.h	383;"	d
+RB_PROTOTYPE_INTERNAL	../../third_party/libuv-v1.9.1/include/tree.h	387;"	d
+RB_PROTOTYPE_STATIC	../../third_party/libuv-v1.9.1/include/tree.h	385;"	d
+RB_RED	../../third_party/libuv-v1.9.1/include/tree.h	311;"	d
+RB_REMOVE	../../third_party/libuv-v1.9.1/include/tree.h	730;"	d
+RB_RIGHT	../../third_party/libuv-v1.9.1/include/tree.h	321;"	d
+RB_ROOT	../../third_party/libuv-v1.9.1/include/tree.h	324;"	d
+RB_ROTATE_LEFT	../../third_party/libuv-v1.9.1/include/tree.h	342;"	d
+RB_ROTATE_RIGHT	../../third_party/libuv-v1.9.1/include/tree.h	362;"	d
+RB_SET	../../third_party/libuv-v1.9.1/include/tree.h	327;"	d
+RB_SET_BLACKRED	../../third_party/libuv-v1.9.1/include/tree.h	333;"	d
+RETURN_OK	task.h	143;"	d
+RETURN_SKIP	task.h	155;"	d
+RETURN_TODO	task.h	148;"	d
+RTL_SRWLOCK	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef PVOID RTL_SRWLOCK;$/;"	t
+R_OK	../../third_party/libuv-v1.9.1/include/uv-win.h	642;"	d
+SIGABRT_COMPAT	../../third_party/libuv-v1.9.1/include/uv-win.h	91;"	d
+SIGHUP	../../third_party/libuv-v1.9.1/include/uv-win.h	84;"	d
+SIGKILL	../../third_party/libuv-v1.9.1/include/uv-win.h	85;"	d
+SIGWINCH	../../third_party/libuv-v1.9.1/include/uv-win.h	86;"	d
+SIG_ATOMIC_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	200;"	d
+SIG_ATOMIC_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	199;"	d
+SIZE_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	204;"	d
+SIZE_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	206;"	d
+SPLAY_ASSEMBLE	../../third_party/libuv-v1.9.1/include/tree.h	112;"	d
+SPLAY_EMPTY	../../third_party/libuv-v1.9.1/include/tree.h	85;"	d
+SPLAY_ENTRY	../../third_party/libuv-v1.9.1/include/tree.h	76;"	d
+SPLAY_FIND	../../third_party/libuv-v1.9.1/include/tree.h	285;"	d
+SPLAY_FOREACH	../../third_party/libuv-v1.9.1/include/tree.h	292;"	d
+SPLAY_GENERATE	../../third_party/libuv-v1.9.1/include/tree.h	163;"	d
+SPLAY_HEAD	../../third_party/libuv-v1.9.1/include/tree.h	64;"	d
+SPLAY_INF	../../third_party/libuv-v1.9.1/include/tree.h	281;"	d
+SPLAY_INIT	../../third_party/libuv-v1.9.1/include/tree.h	72;"	d
+SPLAY_INITIALIZER	../../third_party/libuv-v1.9.1/include/tree.h	69;"	d
+SPLAY_INSERT	../../third_party/libuv-v1.9.1/include/tree.h	283;"	d
+SPLAY_LEFT	../../third_party/libuv-v1.9.1/include/tree.h	82;"	d
+SPLAY_LINKLEFT	../../third_party/libuv-v1.9.1/include/tree.h	100;"	d
+SPLAY_LINKRIGHT	../../third_party/libuv-v1.9.1/include/tree.h	106;"	d
+SPLAY_MAX	../../third_party/libuv-v1.9.1/include/tree.h	289;"	d
+SPLAY_MIN	../../third_party/libuv-v1.9.1/include/tree.h	287;"	d
+SPLAY_NEGINF	../../third_party/libuv-v1.9.1/include/tree.h	280;"	d
+SPLAY_NEXT	../../third_party/libuv-v1.9.1/include/tree.h	286;"	d
+SPLAY_PROTOTYPE	../../third_party/libuv-v1.9.1/include/tree.h	121;"	d
+SPLAY_REMOVE	../../third_party/libuv-v1.9.1/include/tree.h	284;"	d
+SPLAY_RIGHT	../../third_party/libuv-v1.9.1/include/tree.h	83;"	d
+SPLAY_ROOT	../../third_party/libuv-v1.9.1/include/tree.h	84;"	d
+SPLAY_ROTATE_LEFT	../../third_party/libuv-v1.9.1/include/tree.h	94;"	d
+SPLAY_ROTATE_RIGHT	../../third_party/libuv-v1.9.1/include/tree.h	88;"	d
+SRWLOCK	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  typedef RTL_SRWLOCK SRWLOCK, *PSRWLOCK;$/;"	t
+STATIC_ASSERT	../../third_party/libuv-v1.9.1/src/uv-common.h	53;"	d
+SYS_LIBS	Makefile	/^SYS_LIBS        = -lm  $/;"	m
+S_IFLNK	../../third_party/libuv-v1.9.1/include/uv-win.h	66;"	d
+S_IRUSR	task.h	63;"	d
+S_IWUSR	task.h	66;"	d
+Status	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  NTSTATUS Status;$/;"	m	struct:_AFD_POLL_HANDLE_INFO
+TARBALL_EXCLUDE	Makefile	/^TARBALL_EXCLUDE = *.{o,gz,zip}$/;"	m
+TASK_H_	task.h	23;"	d
+TCP	task.h	/^  TCP = 0,$/;"	e	enum:__anon2
+TEST_FILE_LIMIT	task.h	164;"	d
+TEST_FILE_LIMIT	task.h	175;"	d
+TEST_IMPL	task.h	118;"	d
+TEST_OK	task.h	/^  TEST_OK = 0,$/;"	e	enum:test_status
+TEST_PIPENAME	task.h	51;"	d
+TEST_PIPENAME	task.h	55;"	d
+TEST_PIPENAME_2	task.h	52;"	d
+TEST_PIPENAME_2	task.h	56;"	d
+TEST_PIPENAME_3	task.h	53;"	d
+TEST_PIPENAME_3	task.h	57;"	d
+TEST_PORT	task.h	47;"	d
+TEST_PORT_2	task.h	48;"	d
+TEST_SKIP	task.h	/^  TEST_SKIP$/;"	e	enum:test_status
+TEST_TODO	task.h	/^  TEST_TODO,$/;"	e	enum:test_status
+Timeout	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  LARGE_INTEGER Timeout;$/;"	m	struct:_AFD_POLL_INFO
+UDP	task.h	/^  UDP,$/;"	e	enum:__anon2
+UINT16_C	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	236;"	d
+UINT16_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	141;"	d
+UINT32_C	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	237;"	d
+UINT32_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	142;"	d
+UINT64_C	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	238;"	d
+UINT64_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	143;"	d
+UINT8_C	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	235;"	d
+UINT8_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	140;"	d
+UINTMAX_C	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	242;"	d
+UINTMAX_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	187;"	d
+UINTPTR_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	177;"	d
+UINTPTR_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	181;"	d
+UINT_FAST16_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	169;"	d
+UINT_FAST32_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	170;"	d
+UINT_FAST64_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	171;"	d
+UINT_FAST8_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	168;"	d
+UINT_LEAST16_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	155;"	d
+UINT_LEAST32_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	156;"	d
+UINT_LEAST64_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	157;"	d
+UINT_LEAST8_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	154;"	d
+UNUSED	task.h	187;"	d
+UNUSED	task.h	189;"	d
+UV_AIX_H	../../third_party/libuv-v1.9.1/include/uv-aix.h	23;"	d
+UV_ASYNC_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	298;"	d
+UV_ASYNC_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	535;"	d
+UV_ASYNC_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1481;"	d
+UV_BARRIER_STRUCT_PADDING	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	31;"	d
+UV_BARRIER_STRUCT_PADDING	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	37;"	d
+UV_BSD_H	../../third_party/libuv-v1.9.1/include/uv-bsd.h	23;"	d
+UV_CHANGE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_CHANGE = 2$/;"	e	enum:uv_fs_event
+UV_CHECK_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	290;"	d
+UV_CHECK_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	546;"	d
+UV_CHECK_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1479;"	d
+UV_COMMON_H_	../../third_party/libuv-v1.9.1/src/uv-common.h	28;"	d
+UV_CONNECT_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	241;"	d
+UV_CONNECT_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	375;"	d
+UV_CREATE_PIPE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_CREATE_PIPE    = 0x01,$/;"	e	enum:__anon14
+UV_DARWIN_H	../../third_party/libuv-v1.9.1/include/uv-darwin.h	23;"	d
+UV_DESTRUCTOR	../../third_party/libuv-v1.9.1/src/threadpool.c	/^UV_DESTRUCTOR(static void cleanup(void)) {$/;"	f
+UV_DIRENT_BLOCK	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_DIRENT_BLOCK$/;"	e	enum:__anon18
+UV_DIRENT_CHAR	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_DIRENT_CHAR,$/;"	e	enum:__anon18
+UV_DIRENT_DIR	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_DIRENT_DIR,$/;"	e	enum:__anon18
+UV_DIRENT_FIFO	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_DIRENT_FIFO,$/;"	e	enum:__anon18
+UV_DIRENT_FILE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_DIRENT_FILE,$/;"	e	enum:__anon18
+UV_DIRENT_LINK	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_DIRENT_LINK,$/;"	e	enum:__anon18
+UV_DIRENT_SOCKET	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_DIRENT_SOCKET,$/;"	e	enum:__anon18
+UV_DIRENT_UNKNOWN	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_DIRENT_UNKNOWN,$/;"	e	enum:__anon18
+UV_DISCONNECT	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_DISCONNECT = 4$/;"	e	enum:uv_poll_event
+UV_DYNAMIC	../../third_party/libuv-v1.9.1/include/uv-unix.h	189;"	d
+UV_DYNAMIC	../../third_party/libuv-v1.9.1/include/uv-win.h	303;"	d
+UV_ERRNO_H_	../../third_party/libuv-v1.9.1/include/uv-errno.h	23;"	d
+UV_ERRNO_MAP	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_ERRNO_MAP(XX)$/;"	e	enum:__anon5
+UV_ERRNO_MAP	../../third_party/libuv-v1.9.1/include/uv.h	66;"	d
+UV_ERRNO_MAX	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_ERRNO_MAX = UV__EOF - 1$/;"	e	enum:__anon5
+UV_ERR_NAME_GEN	../../third_party/libuv-v1.9.1/src/uv-common.c	159;"	d	file:
+UV_ERR_NAME_GEN	../../third_party/libuv-v1.9.1/src/uv-common.c	166;"	d	file:
+UV_EXTERN	../../third_party/libuv-v1.9.1/include/uv.h	34;"	d
+UV_EXTERN	../../third_party/libuv-v1.9.1/include/uv.h	37;"	d
+UV_EXTERN	../../third_party/libuv-v1.9.1/include/uv.h	40;"	d
+UV_EXTERN	../../third_party/libuv-v1.9.1/include/uv.h	43;"	d
+UV_EXTERN	../../third_party/libuv-v1.9.1/include/uv.h	45;"	d
+UV_FILE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FILE,$/;"	e	enum:__anon6
+UV_FS_ACCESS	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_ACCESS,$/;"	e	enum:__anon21
+UV_FS_CHMOD	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_CHMOD,$/;"	e	enum:__anon21
+UV_FS_CHOWN	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_CHOWN,$/;"	e	enum:__anon21
+UV_FS_CLOSE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_CLOSE,$/;"	e	enum:__anon21
+UV_FS_CUSTOM	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_CUSTOM,$/;"	e	enum:__anon21
+UV_FS_EVENT_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	366;"	d
+UV_FS_EVENT_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	621;"	d
+UV_FS_EVENT_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1487;"	d
+UV_FS_EVENT_RECURSIVE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_EVENT_RECURSIVE = 4$/;"	e	enum:uv_fs_event_flags
+UV_FS_EVENT_STAT	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_EVENT_STAT = 2,$/;"	e	enum:uv_fs_event_flags
+UV_FS_EVENT_WATCH_ENTRY	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_EVENT_WATCH_ENTRY = 1,$/;"	e	enum:uv_fs_event_flags
+UV_FS_FCHMOD	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_FCHMOD,$/;"	e	enum:__anon21
+UV_FS_FCHOWN	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_FCHOWN,$/;"	e	enum:__anon21
+UV_FS_FDATASYNC	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_FDATASYNC,$/;"	e	enum:__anon21
+UV_FS_FSTAT	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_FSTAT,$/;"	e	enum:__anon21
+UV_FS_FSYNC	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_FSYNC,$/;"	e	enum:__anon21
+UV_FS_FTRUNCATE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_FTRUNCATE,$/;"	e	enum:__anon21
+UV_FS_FUTIME	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_FUTIME,$/;"	e	enum:__anon21
+UV_FS_LINK	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_LINK,$/;"	e	enum:__anon21
+UV_FS_LSTAT	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_LSTAT,$/;"	e	enum:__anon21
+UV_FS_MKDIR	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_MKDIR,$/;"	e	enum:__anon21
+UV_FS_MKDTEMP	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_MKDTEMP,$/;"	e	enum:__anon21
+UV_FS_OPEN	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_OPEN,$/;"	e	enum:__anon21
+UV_FS_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	332;"	d
+UV_FS_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	592;"	d
+UV_FS_READ	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_READ,$/;"	e	enum:__anon21
+UV_FS_READLINK	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_READLINK,$/;"	e	enum:__anon21
+UV_FS_REALPATH	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_REALPATH$/;"	e	enum:__anon21
+UV_FS_RENAME	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_RENAME,$/;"	e	enum:__anon21
+UV_FS_REQ_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1485;"	d
+UV_FS_RMDIR	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_RMDIR,$/;"	e	enum:__anon21
+UV_FS_SCANDIR	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_SCANDIR,$/;"	e	enum:__anon21
+UV_FS_SENDFILE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_SENDFILE,$/;"	e	enum:__anon21
+UV_FS_STAT	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_STAT,$/;"	e	enum:__anon21
+UV_FS_SYMLINK	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_SYMLINK,$/;"	e	enum:__anon21
+UV_FS_SYMLINK_DIR	../../third_party/libuv-v1.9.1/include/uv.h	1239;"	d
+UV_FS_SYMLINK_JUNCTION	../../third_party/libuv-v1.9.1/include/uv.h	1245;"	d
+UV_FS_UNKNOWN	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_UNKNOWN = -1,$/;"	e	enum:__anon21
+UV_FS_UNLINK	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_UNLINK,$/;"	e	enum:__anon21
+UV_FS_UTIME	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_UTIME,$/;"	e	enum:__anon21
+UV_FS_WRITE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_FS_WRITE,$/;"	e	enum:__anon21
+UV_GETADDRINFO_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	310;"	d
+UV_GETADDRINFO_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	560;"	d
+UV_GETADDRINFO_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1483;"	d
+UV_GETNAMEINFO_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	319;"	d
+UV_GETNAMEINFO_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	573;"	d
+UV_GETNAMEINFO_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1484;"	d
+UV_H	../../third_party/libuv-v1.9.1/include/uv.h	25;"	d
+UV_HANDLE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	402;"	d
+UV_HANDLE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	255;"	d
+UV_HANDLE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	556;"	d
+UV_HANDLE_TYPE_MAP	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_HANDLE_TYPE_MAP(XX)$/;"	e	enum:__anon6
+UV_HANDLE_TYPE_MAP	../../third_party/libuv-v1.9.1/include/uv.h	144;"	d
+UV_HANDLE_TYPE_MAX	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_HANDLE_TYPE_MAX$/;"	e	enum:__anon6
+UV_HANDLE_TYPE_PRIVATE	../../third_party/libuv-v1.9.1/include/uv.h	1473;"	d
+UV_HAVE_KQUEUE	../../third_party/libuv-v1.9.1/include/uv-bsd.h	32;"	d
+UV_HAVE_KQUEUE	../../third_party/libuv-v1.9.1/include/uv-darwin.h	59;"	d
+UV_IDLE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	294;"	d
+UV_IDLE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	551;"	d
+UV_IDLE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1480;"	d
+UV_IGNORE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_IGNORE         = 0x00,$/;"	e	enum:__anon14
+UV_INHERIT_FD	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_INHERIT_FD     = 0x02,$/;"	e	enum:__anon14
+UV_INHERIT_STREAM	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_INHERIT_STREAM = 0x04,$/;"	e	enum:__anon14
+UV_IO_PRIVATE_PLATFORM_FIELDS	../../third_party/libuv-v1.9.1/include/uv-bsd.h	28;"	d
+UV_IO_PRIVATE_PLATFORM_FIELDS	../../third_party/libuv-v1.9.1/include/uv-darwin.h	33;"	d
+UV_IO_PRIVATE_PLATFORM_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	73;"	d
+UV_JOIN_GROUP	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_JOIN_GROUP$/;"	e	enum:__anon12
+UV_LEAVE_GROUP	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_LEAVE_GROUP = 0,$/;"	e	enum:__anon12
+UV_LINUX_H	../../third_party/libuv-v1.9.1/include/uv-linux.h	23;"	d
+UV_LOOP_BLOCK_SIGNAL	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_LOOP_BLOCK_SIGNAL$/;"	e	enum:__anon8
+UV_LOOP_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	196;"	d
+UV_LOOP_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	311;"	d
+UV_LOOP_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1489;"	d
+UV_LOOP_PRIVATE_PLATFORM_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1490;"	d
+UV_MSAFD_PROVIDER_COUNT	../../third_party/libuv-v1.9.1/include/uv-win.h	209;"	d
+UV_ONCE_INIT	../../third_party/libuv-v1.9.1/include/uv-unix.h	131;"	d
+UV_ONCE_INIT	../../third_party/libuv-v1.9.1/include/uv-win.h	277;"	d
+UV_PIPE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	280;"	d
+UV_PIPE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	471;"	d
+UV_PLATFORM_FS_EVENT_FIELDS	../../third_party/libuv-v1.9.1/include/uv-aix.h	28;"	d
+UV_PLATFORM_FS_EVENT_FIELDS	../../third_party/libuv-v1.9.1/include/uv-bsd.h	25;"	d
+UV_PLATFORM_FS_EVENT_FIELDS	../../third_party/libuv-v1.9.1/include/uv-darwin.h	45;"	d
+UV_PLATFORM_FS_EVENT_FIELDS	../../third_party/libuv-v1.9.1/include/uv-linux.h	30;"	d
+UV_PLATFORM_FS_EVENT_FIELDS	../../third_party/libuv-v1.9.1/include/uv-sunos.h	38;"	d
+UV_PLATFORM_FS_EVENT_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	114;"	d
+UV_PLATFORM_LOOP_FIELDS	../../third_party/libuv-v1.9.1/include/uv-aix.h	25;"	d
+UV_PLATFORM_LOOP_FIELDS	../../third_party/libuv-v1.9.1/include/uv-darwin.h	37;"	d
+UV_PLATFORM_LOOP_FIELDS	../../third_party/libuv-v1.9.1/include/uv-linux.h	25;"	d
+UV_PLATFORM_LOOP_FIELDS	../../third_party/libuv-v1.9.1/include/uv-sunos.h	32;"	d
+UV_PLATFORM_LOOP_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	110;"	d
+UV_PLATFORM_SEM_T	../../third_party/libuv-v1.9.1/include/uv-darwin.h	30;"	d
+UV_PLATFORM_SEM_T	../../third_party/libuv-v1.9.1/include/uv-unix.h	106;"	d
+UV_POLL_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	283;"	d
+UV_POLL_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	513;"	d
+UV_PREPARE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	286;"	d
+UV_PREPARE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	541;"	d
+UV_PREPARE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1478;"	d
+UV_PRIVATE_REQ_TYPES	../../third_party/libuv-v1.9.1/include/uv-unix.h	231;"	d
+UV_PRIVATE_REQ_TYPES	../../third_party/libuv-v1.9.1/include/uv-win.h	384;"	d
+UV_PROCESS_DETACHED	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_PROCESS_DETACHED = (1 << 3),$/;"	e	enum:uv_process_flags
+UV_PROCESS_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	328;"	d
+UV_PROCESS_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	582;"	d
+UV_PROCESS_SETGID	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_PROCESS_SETGID = (1 << 1),$/;"	e	enum:uv_process_flags
+UV_PROCESS_SETUID	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_PROCESS_SETUID = (1 << 0),$/;"	e	enum:uv_process_flags
+UV_PROCESS_WINDOWS_HIDE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_PROCESS_WINDOWS_HIDE = (1 << 4)$/;"	e	enum:uv_process_flags
+UV_PROCESS_WINDOWS_VERBATIM_ARGUMENTS	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_PROCESS_WINDOWS_VERBATIM_ARGUMENTS = (1 << 2),$/;"	e	enum:uv_process_flags
+UV_READABLE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_READABLE = 1,$/;"	e	enum:uv_poll_event
+UV_READABLE_PIPE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_READABLE_PIPE  = 0x10,$/;"	e	enum:__anon14
+UV_RENAME	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_RENAME = 1,$/;"	e	enum:uv_fs_event
+UV_REQ_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	370;"	d
+UV_REQ_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	229;"	d
+UV_REQ_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	359;"	d
+UV_REQ_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1475;"	d
+UV_REQ_TYPE_MAP	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_REQ_TYPE_MAP(XX)$/;"	e	enum:__anon7
+UV_REQ_TYPE_MAP	../../third_party/libuv-v1.9.1/include/uv.h	162;"	d
+UV_REQ_TYPE_MAX	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_REQ_TYPE_MAX$/;"	e	enum:__anon7
+UV_REQ_TYPE_PRIVATE	../../third_party/libuv-v1.9.1/include/uv-unix.h	227;"	d
+UV_REQ_TYPE_PRIVATE	../../third_party/libuv-v1.9.1/include/uv-win.h	348;"	d
+UV_REQ_TYPE_PRIVATE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_REQ_TYPE_PRIVATE$/;"	e	enum:__anon7
+UV_REQ_TYPE_PRIVATE	../../third_party/libuv-v1.9.1/include/uv.h	1474;"	d
+UV_RUN_DEFAULT	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_RUN_DEFAULT = 0,$/;"	e	enum:__anon9
+UV_RUN_NOWAIT	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_RUN_NOWAIT$/;"	e	enum:__anon9
+UV_RUN_ONCE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_RUN_ONCE,$/;"	e	enum:__anon9
+UV_SHUTDOWN_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	244;"	d
+UV_SHUTDOWN_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	378;"	d
+UV_SIGNAL_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	354;"	d
+UV_SIGNAL_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	633;"	d
+UV_SIGNAL_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1488;"	d
+UV_SRC_HEAP_H_	../../third_party/libuv-v1.9.1/src/heap-inl.h	17;"	d
+UV_STREAM_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	443;"	d
+UV_STREAM_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	259;"	d
+UV_STREAM_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	413;"	d
+UV_STREAM_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1476;"	d
+UV_STREAM_PRIVATE_PLATFORM_FIELDS	../../third_party/libuv-v1.9.1/include/uv-darwin.h	56;"	d
+UV_STREAM_PRIVATE_PLATFORM_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	118;"	d
+UV_STRERROR_GEN	../../third_party/libuv-v1.9.1/src/uv-common.c	169;"	d	file:
+UV_STRERROR_GEN	../../third_party/libuv-v1.9.1/src/uv-common.c	176;"	d	file:
+UV_STRINGIFY	../../third_party/libuv-v1.9.1/src/version.c	24;"	d	file:
+UV_STRINGIFY_HELPER	../../third_party/libuv-v1.9.1/src/version.c	25;"	d	file:
+UV_SUNOS_H	../../third_party/libuv-v1.9.1/include/uv-sunos.h	23;"	d
+UV_TCP_IPV6ONLY	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_TCP_IPV6ONLY = 1$/;"	e	enum:uv_tcp_flags
+UV_TCP_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	271;"	d
+UV_TCP_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	432;"	d
+UV_TCP_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1477;"	d
+UV_THREADPOOL_H_	../../third_party/libuv-v1.9.1/include/uv-threadpool.h	28;"	d
+UV_TIMER_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	303;"	d
+UV_TIMER_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	528;"	d
+UV_TIMER_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1482;"	d
+UV_TREE_H_	../../third_party/libuv-v1.9.1/include/tree.h	27;"	d
+UV_TTY_MODE_IO	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_TTY_MODE_IO$/;"	e	enum:__anon13
+UV_TTY_MODE_NORMAL	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_TTY_MODE_NORMAL,$/;"	e	enum:__anon13
+UV_TTY_MODE_RAW	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_TTY_MODE_RAW,$/;"	e	enum:__anon13
+UV_TTY_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	350;"	d
+UV_TTY_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	481;"	d
+UV_UDP_IPV6ONLY	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_UDP_IPV6ONLY = 1,$/;"	e	enum:uv_udp_flags
+UV_UDP_PARTIAL	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_UDP_PARTIAL = 2,$/;"	e	enum:uv_udp_flags
+UV_UDP_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	273;"	d
+UV_UDP_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	440;"	d
+UV_UDP_REUSEADDR	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_UDP_REUSEADDR = 4$/;"	e	enum:uv_udp_flags
+UV_UDP_SEND_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	246;"	d
+UV_UDP_SEND_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	381;"	d
+UV_UNIX_H	../../third_party/libuv-v1.9.1/include/uv-unix.h	23;"	d
+UV_UNKNOWN_HANDLE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_UNKNOWN_HANDLE = 0,$/;"	e	enum:__anon6
+UV_UNKNOWN_REQ	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_UNKNOWN_REQ = 0,$/;"	e	enum:__anon7
+UV_VERSION_H	../../third_party/libuv-v1.9.1/include/uv-version.h	23;"	d
+UV_VERSION_HEX	../../third_party/libuv-v1.9.1/include/uv-version.h	39;"	d
+UV_VERSION_IS_RELEASE	../../third_party/libuv-v1.9.1/include/uv-version.h	36;"	d
+UV_VERSION_MAJOR	../../third_party/libuv-v1.9.1/include/uv-version.h	33;"	d
+UV_VERSION_MINOR	../../third_party/libuv-v1.9.1/include/uv-version.h	34;"	d
+UV_VERSION_PATCH	../../third_party/libuv-v1.9.1/include/uv-version.h	35;"	d
+UV_VERSION_STRING	../../third_party/libuv-v1.9.1/src/version.c	32;"	d	file:
+UV_VERSION_STRING	../../third_party/libuv-v1.9.1/src/version.c	34;"	d	file:
+UV_VERSION_STRING_BASE	../../third_party/libuv-v1.9.1/src/version.c	27;"	d	file:
+UV_VERSION_SUFFIX	../../third_party/libuv-v1.9.1/include/uv-version.h	37;"	d
+UV_WORK_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	347;"	d
+UV_WORK_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	618;"	d
+UV_WORK_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv.h	1486;"	d
+UV_WRITABLE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_WRITABLE = 2,$/;"	e	enum:uv_poll_event
+UV_WRITABLE_PIPE	../../third_party/libuv-v1.9.1/include/uv.h	/^  UV_WRITABLE_PIPE  = 0x20$/;"	e	enum:__anon14
+UV_WRITE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-unix.h	233;"	d
+UV_WRITE_PRIVATE_FIELDS	../../third_party/libuv-v1.9.1/include/uv-win.h	369;"	d
+UV__DT_BLOCK	../../third_party/libuv-v1.9.1/include/uv-unix.h	182;"	d
+UV__DT_BLOCK	../../third_party/libuv-v1.9.1/include/uv-unix.h	184;"	d
+UV__DT_BLOCK	../../third_party/libuv-v1.9.1/include/uv-win.h	300;"	d
+UV__DT_CHAR	../../third_party/libuv-v1.9.1/include/uv-unix.h	177;"	d
+UV__DT_CHAR	../../third_party/libuv-v1.9.1/include/uv-unix.h	179;"	d
+UV__DT_CHAR	../../third_party/libuv-v1.9.1/include/uv-win.h	299;"	d
+UV__DT_DIR	../../third_party/libuv-v1.9.1/include/uv-unix.h	157;"	d
+UV__DT_DIR	../../third_party/libuv-v1.9.1/include/uv-unix.h	159;"	d
+UV__DT_DIR	../../third_party/libuv-v1.9.1/include/uv-win.h	294;"	d
+UV__DT_FIFO	../../third_party/libuv-v1.9.1/include/uv-unix.h	167;"	d
+UV__DT_FIFO	../../third_party/libuv-v1.9.1/include/uv-unix.h	169;"	d
+UV__DT_FIFO	../../third_party/libuv-v1.9.1/include/uv-win.h	297;"	d
+UV__DT_FILE	../../third_party/libuv-v1.9.1/include/uv-unix.h	152;"	d
+UV__DT_FILE	../../third_party/libuv-v1.9.1/include/uv-unix.h	154;"	d
+UV__DT_FILE	../../third_party/libuv-v1.9.1/include/uv-win.h	295;"	d
+UV__DT_LINK	../../third_party/libuv-v1.9.1/include/uv-unix.h	162;"	d
+UV__DT_LINK	../../third_party/libuv-v1.9.1/include/uv-unix.h	164;"	d
+UV__DT_LINK	../../third_party/libuv-v1.9.1/include/uv-win.h	296;"	d
+UV__DT_SOCKET	../../third_party/libuv-v1.9.1/include/uv-unix.h	172;"	d
+UV__DT_SOCKET	../../third_party/libuv-v1.9.1/include/uv-unix.h	174;"	d
+UV__DT_SOCKET	../../third_party/libuv-v1.9.1/include/uv-win.h	298;"	d
+UV__E2BIG	../../third_party/libuv-v1.9.1/include/uv-errno.h	49;"	d
+UV__E2BIG	../../third_party/libuv-v1.9.1/include/uv-errno.h	51;"	d
+UV__EACCES	../../third_party/libuv-v1.9.1/include/uv-errno.h	55;"	d
+UV__EACCES	../../third_party/libuv-v1.9.1/include/uv-errno.h	57;"	d
+UV__EADDRINUSE	../../third_party/libuv-v1.9.1/include/uv-errno.h	61;"	d
+UV__EADDRINUSE	../../third_party/libuv-v1.9.1/include/uv-errno.h	63;"	d
+UV__EADDRNOTAVAIL	../../third_party/libuv-v1.9.1/include/uv-errno.h	67;"	d
+UV__EADDRNOTAVAIL	../../third_party/libuv-v1.9.1/include/uv-errno.h	69;"	d
+UV__EAFNOSUPPORT	../../third_party/libuv-v1.9.1/include/uv-errno.h	73;"	d
+UV__EAFNOSUPPORT	../../third_party/libuv-v1.9.1/include/uv-errno.h	75;"	d
+UV__EAGAIN	../../third_party/libuv-v1.9.1/include/uv-errno.h	79;"	d
+UV__EAGAIN	../../third_party/libuv-v1.9.1/include/uv-errno.h	81;"	d
+UV__EAI_ADDRFAMILY	../../third_party/libuv-v1.9.1/include/uv-errno.h	30;"	d
+UV__EAI_AGAIN	../../third_party/libuv-v1.9.1/include/uv-errno.h	31;"	d
+UV__EAI_BADFLAGS	../../third_party/libuv-v1.9.1/include/uv-errno.h	32;"	d
+UV__EAI_BADHINTS	../../third_party/libuv-v1.9.1/include/uv-errno.h	42;"	d
+UV__EAI_CANCELED	../../third_party/libuv-v1.9.1/include/uv-errno.h	33;"	d
+UV__EAI_FAIL	../../third_party/libuv-v1.9.1/include/uv-errno.h	34;"	d
+UV__EAI_FAMILY	../../third_party/libuv-v1.9.1/include/uv-errno.h	35;"	d
+UV__EAI_MEMORY	../../third_party/libuv-v1.9.1/include/uv-errno.h	36;"	d
+UV__EAI_NODATA	../../third_party/libuv-v1.9.1/include/uv-errno.h	37;"	d
+UV__EAI_NONAME	../../third_party/libuv-v1.9.1/include/uv-errno.h	38;"	d
+UV__EAI_OVERFLOW	../../third_party/libuv-v1.9.1/include/uv-errno.h	39;"	d
+UV__EAI_PROTOCOL	../../third_party/libuv-v1.9.1/include/uv-errno.h	43;"	d
+UV__EAI_SERVICE	../../third_party/libuv-v1.9.1/include/uv-errno.h	40;"	d
+UV__EAI_SOCKTYPE	../../third_party/libuv-v1.9.1/include/uv-errno.h	41;"	d
+UV__EALREADY	../../third_party/libuv-v1.9.1/include/uv-errno.h	85;"	d
+UV__EALREADY	../../third_party/libuv-v1.9.1/include/uv-errno.h	87;"	d
+UV__EBADF	../../third_party/libuv-v1.9.1/include/uv-errno.h	91;"	d
+UV__EBADF	../../third_party/libuv-v1.9.1/include/uv-errno.h	93;"	d
+UV__EBUSY	../../third_party/libuv-v1.9.1/include/uv-errno.h	97;"	d
+UV__EBUSY	../../third_party/libuv-v1.9.1/include/uv-errno.h	99;"	d
+UV__ECANCELED	../../third_party/libuv-v1.9.1/include/uv-errno.h	103;"	d
+UV__ECANCELED	../../third_party/libuv-v1.9.1/include/uv-errno.h	105;"	d
+UV__ECHARSET	../../third_party/libuv-v1.9.1/include/uv-errno.h	109;"	d
+UV__ECHARSET	../../third_party/libuv-v1.9.1/include/uv-errno.h	111;"	d
+UV__ECONNABORTED	../../third_party/libuv-v1.9.1/include/uv-errno.h	115;"	d
+UV__ECONNABORTED	../../third_party/libuv-v1.9.1/include/uv-errno.h	117;"	d
+UV__ECONNREFUSED	../../third_party/libuv-v1.9.1/include/uv-errno.h	121;"	d
+UV__ECONNREFUSED	../../third_party/libuv-v1.9.1/include/uv-errno.h	123;"	d
+UV__ECONNRESET	../../third_party/libuv-v1.9.1/include/uv-errno.h	127;"	d
+UV__ECONNRESET	../../third_party/libuv-v1.9.1/include/uv-errno.h	129;"	d
+UV__EDESTADDRREQ	../../third_party/libuv-v1.9.1/include/uv-errno.h	133;"	d
+UV__EDESTADDRREQ	../../third_party/libuv-v1.9.1/include/uv-errno.h	135;"	d
+UV__EEXIST	../../third_party/libuv-v1.9.1/include/uv-errno.h	139;"	d
+UV__EEXIST	../../third_party/libuv-v1.9.1/include/uv-errno.h	141;"	d
+UV__EFAULT	../../third_party/libuv-v1.9.1/include/uv-errno.h	145;"	d
+UV__EFAULT	../../third_party/libuv-v1.9.1/include/uv-errno.h	147;"	d
+UV__EFBIG	../../third_party/libuv-v1.9.1/include/uv-errno.h	373;"	d
+UV__EFBIG	../../third_party/libuv-v1.9.1/include/uv-errno.h	375;"	d
+UV__EHOSTDOWN	../../third_party/libuv-v1.9.1/include/uv-errno.h	407;"	d
+UV__EHOSTDOWN	../../third_party/libuv-v1.9.1/include/uv-errno.h	413;"	d
+UV__EHOSTDOWN	../../third_party/libuv-v1.9.1/include/uv-errno.h	415;"	d
+UV__EHOSTUNREACH	../../third_party/libuv-v1.9.1/include/uv-errno.h	151;"	d
+UV__EHOSTUNREACH	../../third_party/libuv-v1.9.1/include/uv-errno.h	153;"	d
+UV__EINTR	../../third_party/libuv-v1.9.1/include/uv-errno.h	157;"	d
+UV__EINTR	../../third_party/libuv-v1.9.1/include/uv-errno.h	159;"	d
+UV__EINVAL	../../third_party/libuv-v1.9.1/include/uv-errno.h	163;"	d
+UV__EINVAL	../../third_party/libuv-v1.9.1/include/uv-errno.h	165;"	d
+UV__EIO	../../third_party/libuv-v1.9.1/include/uv-errno.h	169;"	d
+UV__EIO	../../third_party/libuv-v1.9.1/include/uv-errno.h	171;"	d
+UV__EISCONN	../../third_party/libuv-v1.9.1/include/uv-errno.h	175;"	d
+UV__EISCONN	../../third_party/libuv-v1.9.1/include/uv-errno.h	177;"	d
+UV__EISDIR	../../third_party/libuv-v1.9.1/include/uv-errno.h	181;"	d
+UV__EISDIR	../../third_party/libuv-v1.9.1/include/uv-errno.h	183;"	d
+UV__ELOOP	../../third_party/libuv-v1.9.1/include/uv-errno.h	187;"	d
+UV__ELOOP	../../third_party/libuv-v1.9.1/include/uv-errno.h	189;"	d
+UV__EMFILE	../../third_party/libuv-v1.9.1/include/uv-errno.h	193;"	d
+UV__EMFILE	../../third_party/libuv-v1.9.1/include/uv-errno.h	195;"	d
+UV__EMLINK	../../third_party/libuv-v1.9.1/include/uv-errno.h	397;"	d
+UV__EMLINK	../../third_party/libuv-v1.9.1/include/uv-errno.h	399;"	d
+UV__EMSGSIZE	../../third_party/libuv-v1.9.1/include/uv-errno.h	199;"	d
+UV__EMSGSIZE	../../third_party/libuv-v1.9.1/include/uv-errno.h	201;"	d
+UV__ENAMETOOLONG	../../third_party/libuv-v1.9.1/include/uv-errno.h	205;"	d
+UV__ENAMETOOLONG	../../third_party/libuv-v1.9.1/include/uv-errno.h	207;"	d
+UV__ENETDOWN	../../third_party/libuv-v1.9.1/include/uv-errno.h	211;"	d
+UV__ENETDOWN	../../third_party/libuv-v1.9.1/include/uv-errno.h	213;"	d
+UV__ENETUNREACH	../../third_party/libuv-v1.9.1/include/uv-errno.h	217;"	d
+UV__ENETUNREACH	../../third_party/libuv-v1.9.1/include/uv-errno.h	219;"	d
+UV__ENFILE	../../third_party/libuv-v1.9.1/include/uv-errno.h	223;"	d
+UV__ENFILE	../../third_party/libuv-v1.9.1/include/uv-errno.h	225;"	d
+UV__ENOBUFS	../../third_party/libuv-v1.9.1/include/uv-errno.h	229;"	d
+UV__ENOBUFS	../../third_party/libuv-v1.9.1/include/uv-errno.h	231;"	d
+UV__ENODEV	../../third_party/libuv-v1.9.1/include/uv-errno.h	235;"	d
+UV__ENODEV	../../third_party/libuv-v1.9.1/include/uv-errno.h	237;"	d
+UV__ENOENT	../../third_party/libuv-v1.9.1/include/uv-errno.h	241;"	d
+UV__ENOENT	../../third_party/libuv-v1.9.1/include/uv-errno.h	243;"	d
+UV__ENOMEM	../../third_party/libuv-v1.9.1/include/uv-errno.h	247;"	d
+UV__ENOMEM	../../third_party/libuv-v1.9.1/include/uv-errno.h	249;"	d
+UV__ENONET	../../third_party/libuv-v1.9.1/include/uv-errno.h	253;"	d
+UV__ENONET	../../third_party/libuv-v1.9.1/include/uv-errno.h	255;"	d
+UV__ENOPROTOOPT	../../third_party/libuv-v1.9.1/include/uv-errno.h	379;"	d
+UV__ENOPROTOOPT	../../third_party/libuv-v1.9.1/include/uv-errno.h	381;"	d
+UV__ENOSPC	../../third_party/libuv-v1.9.1/include/uv-errno.h	259;"	d
+UV__ENOSPC	../../third_party/libuv-v1.9.1/include/uv-errno.h	261;"	d
+UV__ENOSYS	../../third_party/libuv-v1.9.1/include/uv-errno.h	265;"	d
+UV__ENOSYS	../../third_party/libuv-v1.9.1/include/uv-errno.h	267;"	d
+UV__ENOTCONN	../../third_party/libuv-v1.9.1/include/uv-errno.h	271;"	d
+UV__ENOTCONN	../../third_party/libuv-v1.9.1/include/uv-errno.h	273;"	d
+UV__ENOTDIR	../../third_party/libuv-v1.9.1/include/uv-errno.h	277;"	d
+UV__ENOTDIR	../../third_party/libuv-v1.9.1/include/uv-errno.h	279;"	d
+UV__ENOTEMPTY	../../third_party/libuv-v1.9.1/include/uv-errno.h	283;"	d
+UV__ENOTEMPTY	../../third_party/libuv-v1.9.1/include/uv-errno.h	285;"	d
+UV__ENOTSOCK	../../third_party/libuv-v1.9.1/include/uv-errno.h	289;"	d
+UV__ENOTSOCK	../../third_party/libuv-v1.9.1/include/uv-errno.h	291;"	d
+UV__ENOTSUP	../../third_party/libuv-v1.9.1/include/uv-errno.h	295;"	d
+UV__ENOTSUP	../../third_party/libuv-v1.9.1/include/uv-errno.h	297;"	d
+UV__ENXIO	../../third_party/libuv-v1.9.1/include/uv-errno.h	391;"	d
+UV__ENXIO	../../third_party/libuv-v1.9.1/include/uv-errno.h	393;"	d
+UV__EOF	../../third_party/libuv-v1.9.1/include/uv-errno.h	27;"	d
+UV__EPERM	../../third_party/libuv-v1.9.1/include/uv-errno.h	301;"	d
+UV__EPERM	../../third_party/libuv-v1.9.1/include/uv-errno.h	303;"	d
+UV__EPIPE	../../third_party/libuv-v1.9.1/include/uv-errno.h	307;"	d
+UV__EPIPE	../../third_party/libuv-v1.9.1/include/uv-errno.h	309;"	d
+UV__EPROTO	../../third_party/libuv-v1.9.1/include/uv-errno.h	313;"	d
+UV__EPROTO	../../third_party/libuv-v1.9.1/include/uv-errno.h	315;"	d
+UV__EPROTONOSUPPORT	../../third_party/libuv-v1.9.1/include/uv-errno.h	319;"	d
+UV__EPROTONOSUPPORT	../../third_party/libuv-v1.9.1/include/uv-errno.h	321;"	d
+UV__EPROTOTYPE	../../third_party/libuv-v1.9.1/include/uv-errno.h	325;"	d
+UV__EPROTOTYPE	../../third_party/libuv-v1.9.1/include/uv-errno.h	327;"	d
+UV__ERANGE	../../third_party/libuv-v1.9.1/include/uv-errno.h	385;"	d
+UV__ERANGE	../../third_party/libuv-v1.9.1/include/uv-errno.h	387;"	d
+UV__EROFS	../../third_party/libuv-v1.9.1/include/uv-errno.h	331;"	d
+UV__EROFS	../../third_party/libuv-v1.9.1/include/uv-errno.h	333;"	d
+UV__ESHUTDOWN	../../third_party/libuv-v1.9.1/include/uv-errno.h	337;"	d
+UV__ESHUTDOWN	../../third_party/libuv-v1.9.1/include/uv-errno.h	339;"	d
+UV__ESPIPE	../../third_party/libuv-v1.9.1/include/uv-errno.h	343;"	d
+UV__ESPIPE	../../third_party/libuv-v1.9.1/include/uv-errno.h	345;"	d
+UV__ESRCH	../../third_party/libuv-v1.9.1/include/uv-errno.h	349;"	d
+UV__ESRCH	../../third_party/libuv-v1.9.1/include/uv-errno.h	351;"	d
+UV__ETIMEDOUT	../../third_party/libuv-v1.9.1/include/uv-errno.h	355;"	d
+UV__ETIMEDOUT	../../third_party/libuv-v1.9.1/include/uv-errno.h	357;"	d
+UV__ETXTBSY	../../third_party/libuv-v1.9.1/include/uv-errno.h	361;"	d
+UV__ETXTBSY	../../third_party/libuv-v1.9.1/include/uv-errno.h	363;"	d
+UV__EXDEV	../../third_party/libuv-v1.9.1/include/uv-errno.h	367;"	d
+UV__EXDEV	../../third_party/libuv-v1.9.1/include/uv-errno.h	369;"	d
+UV__HANDLE_ACTIVE	../../third_party/libuv-v1.9.1/src/uv-common.h	/^  UV__HANDLE_ACTIVE   = 0x4000,$/;"	e	enum:__anon33
+UV__HANDLE_ACTIVE	../../third_party/libuv-v1.9.1/src/uv-common.h	65;"	d
+UV__HANDLE_CLOSING	../../third_party/libuv-v1.9.1/src/uv-common.h	/^  UV__HANDLE_CLOSING  = 0 \/* no-op on unix *\/$/;"	e	enum:__anon33
+UV__HANDLE_CLOSING	../../third_party/libuv-v1.9.1/src/uv-common.h	67;"	d
+UV__HANDLE_INTERNAL	../../third_party/libuv-v1.9.1/src/uv-common.h	/^  UV__HANDLE_INTERNAL = 0x8000,$/;"	e	enum:__anon33
+UV__HANDLE_INTERNAL	../../third_party/libuv-v1.9.1/src/uv-common.h	64;"	d
+UV__HANDLE_REF	../../third_party/libuv-v1.9.1/src/uv-common.h	/^  UV__HANDLE_REF      = 0x2000,$/;"	e	enum:__anon33
+UV__HANDLE_REF	../../third_party/libuv-v1.9.1/src/uv-common.h	66;"	d
+UV__INET6_ADDRSTRLEN	../../third_party/libuv-v1.9.1/src/inet.c	31;"	d	file:
+UV__INET_ADDRSTRLEN	../../third_party/libuv-v1.9.1/src/inet.c	30;"	d	file:
+UV__UNKNOWN	../../third_party/libuv-v1.9.1/include/uv-errno.h	28;"	d
+UV__UNUSED	../../third_party/libuv-v1.9.1/include/tree.h	31;"	d
+UV__UNUSED	../../third_party/libuv-v1.9.1/include/tree.h	33;"	d
+WCHAR_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	215;"	d
+WCHAR_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	212;"	d
+WINT_MAX	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	219;"	d
+WINT_MIN	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	218;"	d
+WSAID_ACCEPTEX	../../third_party/libuv-v1.9.1/include/uv-win.h	99;"	d
+WSAID_CONNECTEX	../../third_party/libuv-v1.9.1/include/uv-win.h	103;"	d
+WSAID_DISCONNECTEX	../../third_party/libuv-v1.9.1/include/uv-win.h	111;"	d
+WSAID_GETACCEPTEXSOCKADDRS	../../third_party/libuv-v1.9.1/include/uv-win.h	107;"	d
+WSAID_TRANSMITFILE	../../third_party/libuv-v1.9.1/include/uv-win.h	115;"	d
+WSAPOLLFD	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} WSAPOLLFD, *PWSAPOLLFD, *LPWSAPOLLFD;$/;"	t	typeref:struct:pollfd
+W_OK	../../third_party/libuv-v1.9.1/include/uv-win.h	645;"	d
+X	../../third_party/libuv-v1.9.1/src/uv-common.c	381;"	d	file:
+X	../../third_party/libuv-v1.9.1/src/uv-common.c	383;"	d	file:
+XX	../../third_party/libuv-v1.9.1/include/uv.h	1448;"	d
+XX	../../third_party/libuv-v1.9.1/include/uv.h	1456;"	d
+XX	../../third_party/libuv-v1.9.1/include/uv.h	174;"	d
+XX	../../third_party/libuv-v1.9.1/include/uv.h	176;"	d
+XX	../../third_party/libuv-v1.9.1/include/uv.h	182;"	d
+XX	../../third_party/libuv-v1.9.1/include/uv.h	184;"	d
+XX	../../third_party/libuv-v1.9.1/include/uv.h	191;"	d
+XX	../../third_party/libuv-v1.9.1/include/uv.h	193;"	d
+XX	../../third_party/libuv-v1.9.1/src/uv-common.c	114;"	d	file:
+XX	../../third_party/libuv-v1.9.1/src/uv-common.c	132;"	d	file:
+X_OK	../../third_party/libuv-v1.9.1/include/uv-win.h	648;"	d
+ZIP_EXCLUDE	Makefile	/^ZIP_EXCLUDE     = *.o *.gz *.zip$/;"	m
+_AFD_POLL_HANDLE_INFO	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef struct _AFD_POLL_HANDLE_INFO {$/;"	s
+_AFD_POLL_INFO	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef struct _AFD_POLL_INFO {$/;"	s
+_IFADDRS_H_	../../third_party/libuv-v1.9.1/include/android-ifaddrs.h	27;"	d
+_MSC_STDINT_H_	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	37;"	d
+_SSIZE_T_	../../third_party/libuv-v1.9.1/include/uv-win.h	28;"	d
+_SSIZE_T_DEFINED	../../third_party/libuv-v1.9.1/include/uv-win.h	29;"	d
+_UV_PTHREAD_BARRIER_	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	18;"	d
+_W64	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	60;"	d
+_W64	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	62;"	d
+_WIN32_WINNT	../../third_party/libuv-v1.9.1/include/uv-win.h	23;"	d
+_pad	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	/^  char _pad[UV_BARRIER_STRUCT_PADDING];$/;"	m	struct:__anon4
+_queue_data	main.c	/^typedef struct _queue_data{$/;"	s	file:
+_uv_barrier	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	/^} _uv_barrier;$/;"	t	typeref:struct:__anon3
+active_handles	../../third_party/libuv-v1.9.1/include/uv.h	/^  unsigned int active_handles;$/;"	m	struct:uv_loop_s
+active_reqs	../../third_party/libuv-v1.9.1/include/uv.h	/^  void* active_reqs[2];$/;"	m	struct:uv_loop_s
+address	../../third_party/libuv-v1.9.1/include/uv.h	/^  } address;$/;"	m	struct:uv_interface_address_s	typeref:union:uv_interface_address_s::__anon16
+address4	../../third_party/libuv-v1.9.1/include/uv.h	/^    struct sockaddr_in address4;$/;"	m	union:uv_interface_address_s::__anon16	typeref:struct:uv_interface_address_s::__anon16::sockaddr_in
+address6	../../third_party/libuv-v1.9.1/include/uv.h	/^    struct sockaddr_in6 address6;$/;"	m	union:uv_interface_address_s::__anon16	typeref:struct:uv_interface_address_s::__anon16::sockaddr_in6
+after_read	main.c	/^static void after_read(uv_stream_t* handle,$/;"	f	file:
+after_shutdown	main.c	/^static void after_shutdown(uv_shutdown_t* req, int status) {$/;"	f	file:
+after_work_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_after_work_cb after_work_cb;$/;"	m	struct:uv_work_s
+after_work_cb	main.c	/^static void after_work_cb(uv_work_t* req, int status) {$/;"	f	file:
+after_write	main.c	/^static void after_write(uv_write_t* req, int status) {$/;"	f	file:
+args	../../third_party/libuv-v1.9.1/include/uv.h	/^  char** args;$/;"	m	struct:uv_process_options_s
+b	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	/^  _uv_barrier* b;$/;"	m	struct:__anon4
+base	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  char* base;$/;"	m	struct:uv_buf_t
+base	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  char* base;$/;"	m	struct:uv_buf_t
+broadcast_event	../../third_party/libuv-v1.9.1/include/uv-win.h	/^    HANDLE broadcast_event;$/;"	m	struct:__anon23::__anon24
+buf	main.c	/^	uv_buf_t buf;$/;"	m	struct:__anon1	file:
+buffer	main.c	/^	char buffer[128];$/;"	m	struct:_queue_data	file:
+busy_polling	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^  int busy_polling;$/;"	m	struct:poll_ctx	file:
+can_ipv6	task.h	/^UNUSED static int can_ipv6(void) {$/;"	f
+cb	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  uv__async_cb cb;$/;"	m	struct:uv__async
+cb	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  uv__io_cb cb;$/;"	m	struct:uv__io_s
+cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_connect_cb cb;$/;"	m	struct:uv_connect_s
+cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_fs_cb cb;$/;"	m	struct:uv_fs_s
+cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_shutdown_cb cb;$/;"	m	struct:uv_shutdown_s
+cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_udp_send_cb cb;$/;"	m	struct:uv_udp_send_s
+cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_write_cb cb;$/;"	m	struct:uv_write_s
+close_loop	task.h	/^UNUSED static void close_loop(uv_loop_t* loop) {$/;"	f
+close_walk_cb	task.h	/^static void close_walk_cb(uv_handle_t* handle, void* arg) {$/;"	f
+cond	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	/^  pthread_cond_t   cond;$/;"	m	struct:__anon3
+cond	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static uv_cond_t cond;$/;"	v	file:
+cond_var	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  CONDITION_VARIABLE cond_var;$/;"	m	union:__anon23
+container_of	../../third_party/libuv-v1.9.1/src/uv-common.h	50;"	d
+container_of	task.h	72;"	d
+count	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  unsigned int count;$/;"	m	struct:__anon29
+cpu_times	../../third_party/libuv-v1.9.1/include/uv.h	/^  } cpu_times;$/;"	m	struct:uv_cpu_info_s	typeref:struct:uv_cpu_info_s::uv_cpu_times_s
+cwd	../../third_party/libuv-v1.9.1/include/uv.h	/^  const char* cwd;$/;"	m	struct:uv_process_options_s
+d_name	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  char d_name[1];$/;"	m	struct:uv__dirent_s
+d_type	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  int d_type;$/;"	m	struct:uv__dirent_s
+data	../../third_party/libuv-v1.9.1/include/uv.h	/^  void* data;$/;"	m	struct:uv_loop_s
+data	../../third_party/libuv-v1.9.1/include/uv.h	/^  } data;$/;"	m	struct:uv_stdio_container_s	typeref:union:uv_stdio_container_s::__anon15
+default_loop_ptr	../../third_party/libuv-v1.9.1/src/uv-common.c	/^static uv_loop_t* default_loop_ptr;$/;"	v	file:
+default_loop_struct	../../third_party/libuv-v1.9.1/src/uv-common.c	/^static uv_loop_t default_loop_struct;$/;"	v	file:
+default_threads	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static uv_thread_t default_threads[4];$/;"	v	file:
+done	../../third_party/libuv-v1.9.1/include/uv-threadpool.h	/^  void (*done)(struct uv__work *w, int status);$/;"	m	struct:uv__work
+echo_alloc	main.c	/^static void echo_alloc(uv_handle_t* handle,$/;"	f	file:
+env	../../third_party/libuv-v1.9.1/include/uv.h	/^  char** env;$/;"	m	struct:uv_process_options_s
+errmsg	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  char* errmsg;$/;"	m	struct:__anon22
+errmsg	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  char* errmsg;$/;"	m	struct:__anon31
+event	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  HANDLE event;$/;"	m	struct:uv_once_s
+events	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  unsigned int events;  \/* Current event mask. *\/$/;"	m	struct:uv__io_s
+events	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  short  events;$/;"	m	struct:pollfd
+exit_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_exit_cb exit_cb; \/* Called after the process exits. *\/$/;"	m	struct:uv_process_options_s
+exit_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_exit_cb exit_cb;$/;"	m	struct:uv_process_s
+exit_message	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static QUEUE exit_message;$/;"	v	file:
+fallback	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  } fallback;$/;"	m	union:__anon23	typeref:struct:__anon23::__anon24
+fd	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  int fd;$/;"	m	struct:uv__io_s
+fd	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  SOCKET fd;$/;"	m	struct:pollfd
+fd	../../third_party/libuv-v1.9.1/include/uv.h	/^    int fd;$/;"	m	union:uv_stdio_container_s::__anon15
+file	../../third_party/libuv-v1.9.1/include/uv.h	/^  const char* file;   \/* Path to program to execute. *\/$/;"	m	struct:uv_process_options_s
+flags	../../third_party/libuv-v1.9.1/include/uv.h	/^  unsigned int flags;$/;"	m	struct:uv_process_options_s
+flags	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_stdio_flags flags;$/;"	m	struct:uv_stdio_container_s
+fs_req	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^  uv_fs_t fs_req; \/* TODO(bnoordhuis) mark fs_req internal *\/$/;"	m	struct:poll_ctx	file:
+fs_type	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_fs_type fs_type;$/;"	m	struct:uv_fs_s
+gid	../../third_party/libuv-v1.9.1/include/uv.h	/^  long gid;$/;"	m	struct:uv_passwd_s
+gid	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_gid_t gid;$/;"	m	struct:uv_process_options_s
+handle	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  void* handle;$/;"	m	struct:__anon22
+handle	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  HMODULE handle;$/;"	m	struct:__anon31
+handle	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_stream_t* handle;$/;"	m	struct:uv_connect_s
+handle	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_stream_t* handle;$/;"	m	struct:uv_shutdown_s
+handle	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_stream_t* handle;$/;"	m	struct:uv_write_s
+handle	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_udp_t* handle;$/;"	m	struct:uv_udp_send_s
+handle	main.c	/^	uv_stream_t * handle;$/;"	m	struct:_queue_data	file:
+handle_queue	../../third_party/libuv-v1.9.1/include/uv.h	/^  void* handle_queue[2];$/;"	m	struct:uv_loop_s
+heap	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^struct heap {$/;"	s
+heap_compare_fn	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^typedef int (*heap_compare_fn)(const struct heap_node* a,$/;"	t
+heap_node	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^struct heap_node {$/;"	s
+heap_node_swap	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^static void heap_node_swap(struct heap* heap,$/;"	f
+homedir	../../third_party/libuv-v1.9.1/include/uv.h	/^  char* homedir;$/;"	m	struct:uv_passwd_s
+idle	../../third_party/libuv-v1.9.1/include/uv.h	/^    uint64_t idle;$/;"	m	struct:uv_cpu_info_s::uv_cpu_times_s
+idle_threads	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static unsigned int idle_threads;$/;"	v	file:
+ifa_addr	../../third_party/libuv-v1.9.1/include/android-ifaddrs.h	/^	struct sockaddr	*ifa_addr;$/;"	m	struct:ifaddrs	typeref:struct:ifaddrs::sockaddr
+ifa_broadaddr	../../third_party/libuv-v1.9.1/include/android-ifaddrs.h	44;"	d
+ifa_data	../../third_party/libuv-v1.9.1/include/android-ifaddrs.h	/^	void		*ifa_data;$/;"	m	struct:ifaddrs
+ifa_dstaddr	../../third_party/libuv-v1.9.1/include/android-ifaddrs.h	/^	struct sockaddr	*ifa_dstaddr;$/;"	m	struct:ifaddrs	typeref:struct:ifaddrs::sockaddr
+ifa_flags	../../third_party/libuv-v1.9.1/include/android-ifaddrs.h	/^	unsigned int	 ifa_flags;$/;"	m	struct:ifaddrs
+ifa_name	../../third_party/libuv-v1.9.1/include/android-ifaddrs.h	/^	char		*ifa_name;$/;"	m	struct:ifaddrs
+ifa_netmask	../../third_party/libuv-v1.9.1/include/android-ifaddrs.h	/^	struct sockaddr	*ifa_netmask;$/;"	m	struct:ifaddrs	typeref:struct:ifaddrs::sockaddr
+ifa_next	../../third_party/libuv-v1.9.1/include/android-ifaddrs.h	/^	struct ifaddrs  *ifa_next;$/;"	m	struct:ifaddrs	typeref:struct:ifaddrs::ifaddrs
+ifaddrs	../../third_party/libuv-v1.9.1/include/android-ifaddrs.h	/^struct ifaddrs {$/;"	s
+in	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	/^  unsigned         in;$/;"	m	struct:__anon3
+inet_ntop4	../../third_party/libuv-v1.9.1/src/inet.c	/^static int inet_ntop4(const unsigned char *src, char *dst, size_t size) {$/;"	f	file:
+inet_ntop6	../../third_party/libuv-v1.9.1/src/inet.c	/^static int inet_ntop6(const unsigned char *src, char *dst, size_t size) {$/;"	f	file:
+inet_pton4	../../third_party/libuv-v1.9.1/src/inet.c	/^static int inet_pton4(const char *src, unsigned char *dst) {$/;"	f	file:
+inet_pton6	../../third_party/libuv-v1.9.1/src/inet.c	/^static int inet_pton6(const char *src, unsigned char *dst) {$/;"	f	file:
+init_once	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static void init_once(void) {$/;"	f	file:
+initialized	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static volatile int initialized;$/;"	v	file:
+int16_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef signed __int16    int16_t;$/;"	t
+int16_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef signed short      int16_t;$/;"	t
+int32_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef signed __int32    int32_t;$/;"	t
+int32_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef signed int        int32_t;$/;"	t
+int64_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef signed __int64       int64_t;$/;"	t
+int8_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef signed __int8     int8_t;$/;"	t
+int8_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef signed char       int8_t;$/;"	t
+int_fast16_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef int16_t   int_fast16_t;$/;"	t
+int_fast32_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef int32_t   int_fast32_t;$/;"	t
+int_fast64_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef int64_t   int_fast64_t;$/;"	t
+int_fast8_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef int8_t    int_fast8_t;$/;"	t
+int_least16_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef int16_t   int_least16_t;$/;"	t
+int_least32_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef int32_t   int_least32_t;$/;"	t
+int_least64_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef int64_t   int_least64_t;$/;"	t
+int_least8_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef int8_t    int_least8_t;$/;"	t
+interval	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^  unsigned int interval;$/;"	m	struct:poll_ctx	file:
+intmax_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef int64_t   intmax_t;$/;"	t
+intptr_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef _W64 signed int   intptr_t;$/;"	t
+intptr_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef signed __int64    intptr_t;$/;"	t
+io_watcher	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  uv__io_t io_watcher;$/;"	m	struct:uv__async
+ipc	../../third_party/libuv-v1.9.1/include/uv.h	/^  int ipc; \/* non-zero if this pipe is used for passing handles *\/$/;"	m	struct:uv_pipe_s
+irq	../../third_party/libuv-v1.9.1/include/uv.h	/^    uint64_t irq;$/;"	m	struct:uv_cpu_info_s::uv_cpu_times_s
+is_internal	../../third_party/libuv-v1.9.1/include/uv.h	/^  int is_internal;$/;"	m	struct:uv_interface_address_s
+left	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^  struct heap_node* left;$/;"	m	struct:heap_node	typeref:struct:heap_node::heap_node
+len	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  size_t len;$/;"	m	struct:uv_buf_t
+len	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  ULONG len;$/;"	m	struct:uv_buf_t
+local_calloc	../../third_party/libuv-v1.9.1/src/uv-common.c	/^  uv_calloc_func local_calloc;$/;"	m	struct:__anon32	file:
+local_free	../../third_party/libuv-v1.9.1/src/uv-common.c	/^  uv_free_func local_free;$/;"	m	struct:__anon32	file:
+local_malloc	../../third_party/libuv-v1.9.1/src/uv-common.c	/^  uv_malloc_func local_malloc;$/;"	m	struct:__anon32	file:
+local_realloc	../../third_party/libuv-v1.9.1/src/uv-common.c	/^  uv_realloc_func local_realloc;$/;"	m	struct:__anon32	file:
+loop	../../third_party/libuv-v1.9.1/include/uv-threadpool.h	/^  struct uv_loop_s* loop;$/;"	m	struct:uv__work	typeref:struct:uv__work::uv_loop_s
+loop	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_loop_t* loop;$/;"	m	struct:uv_fs_s
+loop	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_loop_t* loop;$/;"	m	struct:uv_getaddrinfo_s
+loop	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_loop_t* loop;$/;"	m	struct:uv_getnameinfo_s
+loop	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_loop_t* loop;$/;"	m	struct:uv_work_s
+loop	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^  uv_loop_t* loop;$/;"	m	struct:poll_ctx	file:
+loop	main.c	/^static uv_loop_t* loop;$/;"	v	file:
+main	main.c	/^int main(int argc,char * argv[])$/;"	f
+min	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^  struct heap_node* min;$/;"	m	struct:heap	typeref:struct:heap::heap_node
+model	../../third_party/libuv-v1.9.1/include/uv.h	/^  char* model;$/;"	m	struct:uv_cpu_info_s
+mutex	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	/^  pthread_mutex_t  mutex;$/;"	m	struct:__anon3
+mutex	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  uv_mutex_t mutex;$/;"	m	struct:__anon29
+mutex	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static uv_mutex_t mutex;$/;"	v	file:
+n	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  unsigned int n;$/;"	m	struct:__anon29
+name	../../third_party/libuv-v1.9.1/include/uv.h	/^  char* name;$/;"	m	struct:uv_interface_address_s
+name	../../third_party/libuv-v1.9.1/include/uv.h	/^  const char* name;$/;"	m	struct:uv_dirent_s
+nelts	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^  unsigned int nelts;$/;"	m	struct:heap
+netmask	../../third_party/libuv-v1.9.1/include/uv.h	/^  } netmask;$/;"	m	struct:uv_interface_address_s	typeref:union:uv_interface_address_s::__anon17
+netmask4	../../third_party/libuv-v1.9.1/include/uv.h	/^    struct sockaddr_in netmask4;$/;"	m	union:uv_interface_address_s::__anon17	typeref:struct:uv_interface_address_s::__anon17::sockaddr_in
+netmask6	../../third_party/libuv-v1.9.1/include/uv.h	/^    struct sockaddr_in6 netmask6;$/;"	m	union:uv_interface_address_s::__anon17	typeref:struct:uv_interface_address_s::__anon17::sockaddr_in6
+nice	../../third_party/libuv-v1.9.1/include/uv.h	/^    uint64_t nice;$/;"	m	struct:uv_cpu_info_s::uv_cpu_times_s
+nthreads	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static unsigned int nthreads;$/;"	v	file:
+num_readers_	../../third_party/libuv-v1.9.1/include/uv-win.h	/^    unsigned int num_readers_;$/;"	m	struct:__anon25::__anon26
+num_readers_lock_	../../third_party/libuv-v1.9.1/include/uv-win.h	/^    CRITICAL_SECTION num_readers_lock_;$/;"	m	struct:__anon25::__anon26
+on_close	main.c	/^static void on_close(uv_handle_t* peer) {$/;"	f	file:
+on_connection	main.c	/^static void on_connection(uv_stream_t* server, int status) {$/;"	f	file:
+on_recv	main.c	/^static void on_recv(uv_udp_t* handle,$/;"	f	file:
+on_send	main.c	/^static void on_send(uv_udp_send_t* req, int status) {$/;"	f	file:
+on_server_close	main.c	/^static void on_server_close(uv_handle_t* handle) {$/;"	f	file:
+once	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static uv_once_t once = UV_ONCE_INIT;$/;"	v	file:
+out	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	/^  unsigned         out;$/;"	m	struct:__anon3
+parent	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^  struct heap_node* parent;$/;"	m	struct:heap_node	typeref:struct:heap_node::heap_node
+parent_handle	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^  uv_fs_poll_t* parent_handle; \/* NULL if parent has been stopped or closed *\/$/;"	m	struct:poll_ctx	file:
+path	../../third_party/libuv-v1.9.1/include/uv.h	/^  char* path;$/;"	m	struct:uv_fs_event_s
+path	../../third_party/libuv-v1.9.1/include/uv.h	/^  const char* path;$/;"	m	struct:uv_fs_s
+path	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^  char path[1]; \/* variable length *\/$/;"	m	struct:poll_ctx	file:
+pending_queue	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  void* pending_queue[2];$/;"	m	struct:uv__io_s
+pevents	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  unsigned int pevents; \/* Pending event mask i.e. mask at next tick. *\/$/;"	m	struct:uv__io_s
+phys_addr	../../third_party/libuv-v1.9.1/include/uv.h	/^  char phys_addr[6];$/;"	m	struct:uv_interface_address_s
+pid	../../third_party/libuv-v1.9.1/include/uv.h	/^  int pid;$/;"	m	struct:uv_process_s
+pipeServer	main.c	/^static uv_pipe_t pipeServer;$/;"	v	file:
+poll_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_poll_cb poll_cb;$/;"	m	struct:uv_poll_s
+poll_cb	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^  uv_fs_poll_cb poll_cb;$/;"	m	struct:poll_ctx	file:
+poll_cb	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^static void poll_cb(uv_fs_t* req) {$/;"	f	file:
+poll_ctx	../../third_party/libuv-v1.9.1/include/uv.h	/^  void* poll_ctx;$/;"	m	struct:uv_fs_poll_s
+poll_ctx	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^struct poll_ctx {$/;"	s	file:
+pollfd	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef struct pollfd {$/;"	s
+post	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static void post(QUEUE* q) {$/;"	f	file:
+pthread_barrier_t	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	/^} pthread_barrier_t;$/;"	t	typeref:struct:__anon4
+ptr	../../third_party/libuv-v1.9.1/include/uv.h	/^  void* ptr;$/;"	m	struct:uv_fs_s
+queue_data	main.c	/^}queue_data;$/;"	t	typeref:struct:_queue_data	file:
+ran	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  unsigned char ran;$/;"	m	struct:uv_once_s
+req	main.c	/^	uv_write_t req;$/;"	m	struct:__anon1	file:
+result	../../third_party/libuv-v1.9.1/include/uv.h	/^  ssize_t result;$/;"	m	struct:uv_fs_s
+revents	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  short  revents;$/;"	m	struct:pollfd
+right	../../third_party/libuv-v1.9.1/src/heap-inl.h	/^  struct heap_node* right;$/;"	m	struct:heap_node	typeref:struct:heap_node::heap_node
+ru_idrss	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_idrss;     \/* integral unshared data size *\/$/;"	m	struct:__anon20
+ru_inblock	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_inblock;   \/* block input operations *\/$/;"	m	struct:__anon20
+ru_isrss	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_isrss;     \/* integral unshared stack size *\/$/;"	m	struct:__anon20
+ru_ixrss	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_ixrss;     \/* integral shared memory size *\/$/;"	m	struct:__anon20
+ru_majflt	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_majflt;    \/* page faults (hard page faults) *\/$/;"	m	struct:__anon20
+ru_maxrss	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_maxrss;    \/* maximum resident set size *\/$/;"	m	struct:__anon20
+ru_minflt	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_minflt;    \/* page reclaims (soft page faults) *\/$/;"	m	struct:__anon20
+ru_msgrcv	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_msgrcv;    \/* IPC messages received *\/$/;"	m	struct:__anon20
+ru_msgsnd	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_msgsnd;    \/* IPC messages sent *\/$/;"	m	struct:__anon20
+ru_nivcsw	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_nivcsw;    \/* involuntary context switches *\/$/;"	m	struct:__anon20
+ru_nsignals	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_nsignals;  \/* signals received *\/$/;"	m	struct:__anon20
+ru_nswap	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_nswap;     \/* swaps *\/$/;"	m	struct:__anon20
+ru_nvcsw	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_nvcsw;     \/* voluntary context switches *\/$/;"	m	struct:__anon20
+ru_oublock	../../third_party/libuv-v1.9.1/include/uv.h	/^   uint64_t ru_oublock;   \/* block output operations *\/$/;"	m	struct:__anon20
+ru_stime	../../third_party/libuv-v1.9.1/include/uv.h	/^   uv_timeval_t ru_stime; \/* system CPU time used *\/$/;"	m	struct:__anon20
+ru_utime	../../third_party/libuv-v1.9.1/include/uv.h	/^   uv_timeval_t ru_utime; \/* user CPU time used *\/$/;"	m	struct:__anon20
+send_handle	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_stream_t* send_handle;$/;"	m	struct:uv_write_s
+send_queue_count	../../third_party/libuv-v1.9.1/include/uv.h	/^  size_t send_queue_count;$/;"	m	struct:uv_udp_s
+send_queue_size	../../third_party/libuv-v1.9.1/include/uv.h	/^  size_t send_queue_size;$/;"	m	struct:uv_udp_s
+send_work_queue	main.c	/^int send_work_queue(queue_data * qd)$/;"	f
+server	main.c	/^static uv_handle_t* server;$/;"	v	file:
+serverType	main.c	/^static stream_type serverType;$/;"	v	file:
+server_closed	main.c	/^static int server_closed;$/;"	v	file:
+shell	../../third_party/libuv-v1.9.1/include/uv.h	/^  char* shell;$/;"	m	struct:uv_passwd_s
+signal_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_signal_cb signal_cb;$/;"	m	struct:uv_signal_s
+signal_event	../../third_party/libuv-v1.9.1/include/uv-win.h	/^    HANDLE signal_event;$/;"	m	struct:__anon23::__anon24
+signum	../../third_party/libuv-v1.9.1/include/uv.h	/^  int signum;$/;"	m	struct:uv_signal_s
+speed	../../third_party/libuv-v1.9.1/include/uv.h	/^  int speed;$/;"	m	struct:uv_cpu_info_s
+ssize_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef intptr_t ssize_t;$/;"	t
+st_atim	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_timespec_t st_atim;$/;"	m	struct:__anon11
+st_birthtim	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_timespec_t st_birthtim;$/;"	m	struct:__anon11
+st_blksize	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_blksize;$/;"	m	struct:__anon11
+st_blocks	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_blocks;$/;"	m	struct:__anon11
+st_ctim	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_timespec_t st_ctim;$/;"	m	struct:__anon11
+st_dev	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_dev;$/;"	m	struct:__anon11
+st_flags	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_flags;$/;"	m	struct:__anon11
+st_gen	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_gen;$/;"	m	struct:__anon11
+st_gid	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_gid;$/;"	m	struct:__anon11
+st_ino	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_ino;$/;"	m	struct:__anon11
+st_mode	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_mode;$/;"	m	struct:__anon11
+st_mtim	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_timespec_t st_mtim;$/;"	m	struct:__anon11
+st_nlink	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_nlink;$/;"	m	struct:__anon11
+st_rdev	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_rdev;$/;"	m	struct:__anon11
+st_size	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_size;$/;"	m	struct:__anon11
+st_uid	../../third_party/libuv-v1.9.1/include/uv.h	/^  uint64_t st_uid;$/;"	m	struct:__anon11
+start_time	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^  uint64_t start_time;$/;"	m	struct:poll_ctx	file:
+statbuf	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_stat_t statbuf;  \/* Stores the result of uv_fs_stat() and uv_fs_fstat(). *\/$/;"	m	struct:uv_fs_s
+statbuf	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^  uv_stat_t statbuf;$/;"	m	struct:poll_ctx	file:
+statbuf_eq	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^static int statbuf_eq(const uv_stat_t* a, const uv_stat_t* b) {$/;"	f	file:
+state_	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  } state_;$/;"	m	union:__anon25	typeref:struct:__anon25::__anon26
+stdio	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_stdio_container_t* stdio;$/;"	m	struct:uv_process_options_s
+stdio_count	../../third_party/libuv-v1.9.1/include/uv.h	/^  int stdio_count;$/;"	m	struct:uv_process_options_s
+stop_flag	../../third_party/libuv-v1.9.1/include/uv.h	/^  unsigned int stop_flag;$/;"	m	struct:uv_loop_s
+stream	../../third_party/libuv-v1.9.1/include/uv.h	/^    uv_stream_t* stream;$/;"	m	union:uv_stdio_container_s::__anon15
+stream_type	task.h	/^} stream_type;$/;"	t	typeref:enum:__anon2
+sys	../../third_party/libuv-v1.9.1/include/uv.h	/^    uint64_t sys;$/;"	m	struct:uv_cpu_info_s::uv_cpu_times_s
+tcp4_echo_start	main.c	/^static int tcp4_echo_start(int port) {$/;"	f	file:
+tcpServer	main.c	/^static uv_tcp_t tcpServer;$/;"	v	file:
+test_status	task.h	/^enum test_status {$/;"	g
+threads	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static uv_thread_t* threads;$/;"	v	file:
+threshold	../../third_party/libuv-v1.9.1/include/pthread-barrier.h	/^  unsigned         threshold;$/;"	m	struct:__anon3
+timer_cb	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^static void timer_cb(uv_timer_t* timer) {$/;"	f	file:
+timer_close_cb	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^static void timer_close_cb(uv_handle_t* handle) {$/;"	f	file:
+timer_handle	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^  uv_timer_t timer_handle;$/;"	m	struct:poll_ctx	file:
+tls_index	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  DWORD tls_index;$/;"	m	struct:__anon30
+turnstile1	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  uv_sem_t turnstile1;$/;"	m	struct:__anon29
+turnstile2	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  uv_sem_t turnstile2;$/;"	m	struct:__anon29
+tv_nsec	../../third_party/libuv-v1.9.1/include/uv.h	/^  long tv_nsec;$/;"	m	struct:__anon10
+tv_sec	../../third_party/libuv-v1.9.1/include/uv.h	/^  long tv_sec;$/;"	m	struct:__anon10
+tv_sec	../../third_party/libuv-v1.9.1/include/uv.h	/^  long tv_sec;$/;"	m	struct:__anon19
+tv_usec	../../third_party/libuv-v1.9.1/include/uv.h	/^  long tv_usec;$/;"	m	struct:__anon19
+type	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_dirent_type_t type;$/;"	m	struct:uv_dirent_s
+udpServer	main.c	/^static uv_udp_t udpServer;$/;"	v	file:
+uid	../../third_party/libuv-v1.9.1/include/uv.h	/^  long uid;$/;"	m	struct:uv_passwd_s
+uid	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_uid_t uid;$/;"	m	struct:uv_process_options_s
+uint16_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef unsigned __int16  uint16_t;$/;"	t
+uint16_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef unsigned short    uint16_t;$/;"	t
+uint32_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef unsigned __int32  uint32_t;$/;"	t
+uint32_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef unsigned int      uint32_t;$/;"	t
+uint64_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef unsigned __int64     uint64_t;$/;"	t
+uint8_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef unsigned __int8   uint8_t;$/;"	t
+uint8_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef unsigned char     uint8_t;$/;"	t
+uint_fast16_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef uint16_t  uint_fast16_t;$/;"	t
+uint_fast32_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef uint32_t  uint_fast32_t;$/;"	t
+uint_fast64_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef uint64_t  uint_fast64_t;$/;"	t
+uint_fast8_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef uint8_t   uint_fast8_t;$/;"	t
+uint_least16_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef uint16_t  uint_least16_t;$/;"	t
+uint_least32_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef uint32_t  uint_least32_t;$/;"	t
+uint_least64_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef uint64_t  uint_least64_t;$/;"	t
+uint_least8_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef uint8_t   uint_least8_t;$/;"	t
+uintmax_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^typedef uint64_t  uintmax_t;$/;"	t
+uintptr_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef _W64 unsigned int uintptr_t;$/;"	t
+uintptr_t	../../third_party/libuv-v1.9.1/include/stdint-msvc2008.h	/^   typedef unsigned __int64  uintptr_t;$/;"	t
+unused1_	../../third_party/libuv-v1.9.1/include/uv-win.h	/^    uv_mutex_t unused1_;$/;"	m	struct:__anon25::__anon28
+unused1_	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  } unused1_;$/;"	m	union:__anon25	typeref:struct:__anon25::__anon27
+unused2_	../../third_party/libuv-v1.9.1/include/uv-win.h	/^    uv_mutex_t unused2_;$/;"	m	struct:__anon25::__anon28
+unused2_	../../third_party/libuv-v1.9.1/include/uv-win.h	/^  } unused2_;$/;"	m	union:__anon25	typeref:struct:__anon25::__anon28
+unused_	../../third_party/libuv-v1.9.1/include/uv-win.h	/^    SRWLOCK unused_;$/;"	m	struct:__anon25::__anon27
+user	../../third_party/libuv-v1.9.1/include/uv.h	/^    uint64_t user;$/;"	m	struct:uv_cpu_info_s::uv_cpu_times_s
+username	../../third_party/libuv-v1.9.1/include/uv.h	/^  char* username;$/;"	m	struct:uv_passwd_s
+uv__active_handle_add	../../third_party/libuv-v1.9.1/src/uv-common.h	145;"	d
+uv__active_handle_rm	../../third_party/libuv-v1.9.1/src/uv-common.h	151;"	d
+uv__allocator	../../third_party/libuv-v1.9.1/src/uv-common.c	/^static uv__allocator_t uv__allocator = {$/;"	v	file:
+uv__allocator_t	../../third_party/libuv-v1.9.1/src/uv-common.c	/^} uv__allocator_t;$/;"	t	typeref:struct:__anon32	file:
+uv__async	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^struct uv__async {$/;"	s
+uv__async_cb	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef void (*uv__async_cb)(struct uv_loop_s* loop,$/;"	t
+uv__calloc	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void* uv__calloc(size_t count, size_t size) {$/;"	f
+uv__cancelled	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static void uv__cancelled(struct uv__work* w) {$/;"	f	file:
+uv__count_bufs	../../third_party/libuv-v1.9.1/src/uv-common.c	/^size_t uv__count_bufs(const uv_buf_t bufs[], unsigned int nbufs) {$/;"	f
+uv__dirent_s	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef struct uv__dirent_s {$/;"	s
+uv__dirent_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef struct dirent uv__dirent_t;$/;"	t	typeref:struct:dirent
+uv__dirent_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} uv__dirent_t;$/;"	t	typeref:struct:uv__dirent_s
+uv__free	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void uv__free(void* ptr) {$/;"	f
+uv__fs_poll_close	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^void uv__fs_poll_close(uv_fs_poll_t* handle) {$/;"	f
+uv__fs_poll_endgame	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^void uv__fs_poll_endgame(uv_loop_t* loop, uv_fs_poll_t* handle) {$/;"	f
+uv__fs_scandir_cleanup	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void uv__fs_scandir_cleanup(uv_fs_t* req) {$/;"	f
+uv__fs_scandir_free	../../third_party/libuv-v1.9.1/src/uv-common.c	491;"	d	file:
+uv__fs_scandir_free	../../third_party/libuv-v1.9.1/src/uv-common.c	493;"	d	file:
+uv__get_nbufs	../../third_party/libuv-v1.9.1/src/uv-common.c	/^static unsigned int* uv__get_nbufs(uv_fs_t* req) {$/;"	f	file:
+uv__handle_init	../../third_party/libuv-v1.9.1/src/uv-common.h	208;"	d
+uv__handle_platform_init	../../third_party/libuv-v1.9.1/src/uv-common.h	203;"	d
+uv__handle_platform_init	../../third_party/libuv-v1.9.1/src/uv-common.h	205;"	d
+uv__handle_ref	../../third_party/libuv-v1.9.1/src/uv-common.h	181;"	d
+uv__handle_start	../../third_party/libuv-v1.9.1/src/uv-common.h	163;"	d
+uv__handle_stop	../../third_party/libuv-v1.9.1/src/uv-common.h	172;"	d
+uv__handle_unref	../../third_party/libuv-v1.9.1/src/uv-common.h	190;"	d
+uv__has_active_handles	../../third_party/libuv-v1.9.1/src/uv-common.h	142;"	d
+uv__has_active_reqs	../../third_party/libuv-v1.9.1/src/uv-common.h	126;"	d
+uv__has_ref	../../third_party/libuv-v1.9.1/src/uv-common.h	199;"	d
+uv__io_cb	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef void (*uv__io_cb)(struct uv_loop_s* loop,$/;"	t
+uv__io_s	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^struct uv__io_s {$/;"	s
+uv__io_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef struct uv__io_s uv__io_t;$/;"	t	typeref:struct:uv__io_s
+uv__is_active	../../third_party/libuv-v1.9.1/src/uv-common.h	157;"	d
+uv__is_closing	../../third_party/libuv-v1.9.1/src/uv-common.h	160;"	d
+uv__malloc	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void* uv__malloc(size_t size) {$/;"	f
+uv__print_handles	../../third_party/libuv-v1.9.1/src/uv-common.c	/^static void uv__print_handles(uv_loop_t* loop, int only_active, FILE* stream) {$/;"	f	file:
+uv__queue_done	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static void uv__queue_done(struct uv__work* w, int err) {$/;"	f	file:
+uv__queue_work	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static void uv__queue_work(struct uv__work* w) {$/;"	f	file:
+uv__realloc	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void* uv__realloc(void* ptr, size_t size) {$/;"	f
+uv__req_init	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static void uv__req_init(uv_loop_t* loop,$/;"	f	file:
+uv__req_init	../../third_party/libuv-v1.9.1/src/threadpool.c	36;"	d	file:
+uv__req_register	../../third_party/libuv-v1.9.1/src/uv-common.h	129;"	d
+uv__req_unregister	../../third_party/libuv-v1.9.1/src/uv-common.h	135;"	d
+uv__strdup	../../third_party/libuv-v1.9.1/src/uv-common.c	/^char* uv__strdup(const char* s) {$/;"	f
+uv__strndup	../../third_party/libuv-v1.9.1/src/uv-common.c	/^char* uv__strndup(const char* s, size_t n) {$/;"	f
+uv__unknown_err_code	../../third_party/libuv-v1.9.1/src/uv-common.c	/^static const char* uv__unknown_err_code(int err) {$/;"	f	file:
+uv__work	../../third_party/libuv-v1.9.1/include/uv-threadpool.h	/^struct uv__work {$/;"	s
+uv__work_cancel	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static int uv__work_cancel(uv_loop_t* loop, uv_req_t* req, struct uv__work* w) {$/;"	f	file:
+uv__work_done	../../third_party/libuv-v1.9.1/src/threadpool.c	/^void uv__work_done(uv_async_t* handle) {$/;"	f
+uv__work_submit	../../third_party/libuv-v1.9.1/src/threadpool.c	/^void uv__work_submit(uv_loop_t* loop,$/;"	f
+uv_after_work_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_after_work_cb)(uv_work_t* req, int status);$/;"	t
+uv_alloc_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_alloc_cb)(uv_handle_t* handle,$/;"	t
+uv_any_handle	../../third_party/libuv-v1.9.1/include/uv.h	/^union uv_any_handle {$/;"	u
+uv_any_req	../../third_party/libuv-v1.9.1/include/uv.h	/^union uv_any_req {$/;"	u
+uv_async_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_async_cb)(uv_async_t* handle);$/;"	t
+uv_async_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_async_s {$/;"	s
+uv_async_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_async_s uv_async_t;$/;"	t	typeref:struct:uv_async_s
+uv_barrier_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef pthread_barrier_t uv_barrier_t;$/;"	t
+uv_barrier_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} uv_barrier_t;$/;"	t	typeref:struct:__anon29
+uv_buf_init	../../third_party/libuv-v1.9.1/src/uv-common.c	/^uv_buf_t uv_buf_init(char* base, unsigned int len) {$/;"	f
+uv_buf_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef struct uv_buf_t {$/;"	s
+uv_buf_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^} uv_buf_t;$/;"	t	typeref:struct:uv_buf_t
+uv_buf_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef struct uv_buf_t {$/;"	s
+uv_buf_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} uv_buf_t;$/;"	t	typeref:struct:uv_buf_t
+uv_calloc_func	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void* (*uv_calloc_func)(size_t count, size_t size);$/;"	t
+uv_cancel	../../third_party/libuv-v1.9.1/src/threadpool.c	/^int uv_cancel(uv_req_t* req) {$/;"	f
+uv_check_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_check_cb)(uv_check_t* handle);$/;"	t
+uv_check_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_check_s {$/;"	s
+uv_check_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_check_s uv_check_t;$/;"	t	typeref:struct:uv_check_s
+uv_close_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_close_cb)(uv_handle_t* handle);$/;"	t
+uv_cond_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef pthread_cond_t uv_cond_t;$/;"	t
+uv_cond_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} uv_cond_t;$/;"	t	typeref:union:__anon23
+uv_connect_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_connect_cb)(uv_connect_t* req, int status);$/;"	t
+uv_connect_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_connect_s {$/;"	s
+uv_connect_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_connect_s uv_connect_t;$/;"	t	typeref:struct:uv_connect_s
+uv_connection_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_connection_cb)(uv_stream_t* server, int status);$/;"	t
+uv_cpu_info_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_cpu_info_s {$/;"	s
+uv_cpu_info_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_cpu_info_s uv_cpu_info_t;$/;"	t	typeref:struct:uv_cpu_info_s
+uv_cpu_times_s	../../third_party/libuv-v1.9.1/include/uv.h	/^  struct uv_cpu_times_s {$/;"	s	struct:uv_cpu_info_s
+uv_default_loop	../../third_party/libuv-v1.9.1/src/uv-common.c	/^uv_loop_t* uv_default_loop(void) {$/;"	f
+uv_dirent_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_dirent_s {$/;"	s
+uv_dirent_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_dirent_s uv_dirent_t;$/;"	t	typeref:struct:uv_dirent_s
+uv_dirent_type_t	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_dirent_type_t;$/;"	t	typeref:enum:__anon18
+uv_err_name	../../third_party/libuv-v1.9.1/src/uv-common.c	/^const char* uv_err_name(int err) {$/;"	f
+uv_errno_t	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_errno_t;$/;"	t	typeref:enum:__anon5
+uv_exit_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_exit_cb)(uv_process_t*, int64_t exit_status, int term_signal);$/;"	t
+uv_file	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef int uv_file;$/;"	t
+uv_file	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef int uv_file;$/;"	t
+uv_free_func	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_free_func)(void* ptr);$/;"	t
+uv_fs_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_fs_cb)(uv_fs_t* req);$/;"	t
+uv_fs_event	../../third_party/libuv-v1.9.1/include/uv.h	/^enum uv_fs_event {$/;"	g
+uv_fs_event_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_fs_event_cb)(uv_fs_event_t* handle,$/;"	t
+uv_fs_event_flags	../../third_party/libuv-v1.9.1/include/uv.h	/^enum uv_fs_event_flags {$/;"	g
+uv_fs_event_getpath	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_fs_event_getpath(uv_fs_event_t* handle, char* buffer, size_t* size) {$/;"	f
+uv_fs_event_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_fs_event_s {$/;"	s
+uv_fs_event_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_fs_event_s uv_fs_event_t;$/;"	t	typeref:struct:uv_fs_event_s
+uv_fs_poll_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_fs_poll_cb)(uv_fs_poll_t* handle,$/;"	t
+uv_fs_poll_getpath	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^int uv_fs_poll_getpath(uv_fs_poll_t* handle, char* buffer, size_t* size) {$/;"	f
+uv_fs_poll_init	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^int uv_fs_poll_init(uv_loop_t* loop, uv_fs_poll_t* handle) {$/;"	f
+uv_fs_poll_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_fs_poll_s {$/;"	s
+uv_fs_poll_start	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^int uv_fs_poll_start(uv_fs_poll_t* handle,$/;"	f
+uv_fs_poll_stop	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^int uv_fs_poll_stop(uv_fs_poll_t* handle) {$/;"	f
+uv_fs_poll_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_fs_poll_s uv_fs_poll_t;$/;"	t	typeref:struct:uv_fs_poll_s
+uv_fs_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_fs_s {$/;"	s
+uv_fs_scandir_next	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_fs_scandir_next(uv_fs_t* req, uv_dirent_t* ent) {$/;"	f
+uv_fs_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_fs_s uv_fs_t;$/;"	t	typeref:struct:uv_fs_s
+uv_fs_type	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_fs_type;$/;"	t	typeref:enum:__anon21
+uv_getaddrinfo_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_getaddrinfo_cb)(uv_getaddrinfo_t* req,$/;"	t
+uv_getaddrinfo_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_getaddrinfo_s {$/;"	s
+uv_getaddrinfo_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_getaddrinfo_s uv_getaddrinfo_t;$/;"	t	typeref:struct:uv_getaddrinfo_s
+uv_getnameinfo_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_getnameinfo_cb)(uv_getnameinfo_t* req,$/;"	t
+uv_getnameinfo_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_getnameinfo_s {$/;"	s
+uv_getnameinfo_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_getnameinfo_s uv_getnameinfo_t;$/;"	t	typeref:struct:uv_getnameinfo_s
+uv_gid_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef gid_t uv_gid_t;$/;"	t
+uv_gid_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef unsigned char uv_gid_t;$/;"	t
+uv_handle_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_handle_s {$/;"	s
+uv_handle_size	../../third_party/libuv-v1.9.1/src/uv-common.c	/^size_t uv_handle_size(uv_handle_type type) {$/;"	f
+uv_handle_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_handle_s uv_handle_t;$/;"	t	typeref:struct:uv_handle_s
+uv_handle_type	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_handle_type;$/;"	t	typeref:enum:__anon6
+uv_has_ref	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_has_ref(const uv_handle_t* handle) {$/;"	f
+uv_idle_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_idle_cb)(uv_idle_t* handle);$/;"	t
+uv_idle_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_idle_s {$/;"	s
+uv_idle_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_idle_s uv_idle_t;$/;"	t	typeref:struct:uv_idle_s
+uv_inet_ntop	../../third_party/libuv-v1.9.1/src/inet.c	/^int uv_inet_ntop(int af, const void* src, char* dst, size_t size) {$/;"	f
+uv_inet_pton	../../third_party/libuv-v1.9.1/src/inet.c	/^int uv_inet_pton(int af, const char* src, void* dst) {$/;"	f
+uv_interface_address_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_interface_address_s {$/;"	s
+uv_interface_address_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_interface_address_s uv_interface_address_t;$/;"	t	typeref:struct:uv_interface_address_s
+uv_ip4_addr	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_ip4_addr(const char* ip, int port, struct sockaddr_in* addr) {$/;"	f
+uv_ip4_name	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_ip4_name(const struct sockaddr_in* src, char* dst, size_t size) {$/;"	f
+uv_ip6_addr	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_ip6_addr(const char* ip, int port, struct sockaddr_in6* addr) {$/;"	f
+uv_ip6_name	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_ip6_name(const struct sockaddr_in6* src, char* dst, size_t size) {$/;"	f
+uv_key_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef pthread_key_t uv_key_t;$/;"	t
+uv_key_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} uv_key_t;$/;"	t	typeref:struct:__anon30
+uv_lib_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^} uv_lib_t;$/;"	t	typeref:struct:__anon22
+uv_lib_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} uv_lib_t;$/;"	t	typeref:struct:__anon31
+uv_loop_close	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_loop_close(uv_loop_t* loop) {$/;"	f
+uv_loop_configure	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_loop_configure(uv_loop_t* loop, uv_loop_option option, ...) {$/;"	f
+uv_loop_delete	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void uv_loop_delete(uv_loop_t* loop) {$/;"	f
+uv_loop_new	../../third_party/libuv-v1.9.1/src/uv-common.c	/^uv_loop_t* uv_loop_new(void) {$/;"	f
+uv_loop_option	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_loop_option;$/;"	t	typeref:enum:__anon8
+uv_loop_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_loop_s {$/;"	s
+uv_loop_size	../../third_party/libuv-v1.9.1/src/uv-common.c	/^size_t uv_loop_size(void) {$/;"	f
+uv_loop_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_loop_s uv_loop_t;$/;"	t	typeref:struct:uv_loop_s
+uv_malloc_func	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void* (*uv_malloc_func)(size_t size);$/;"	t
+uv_membership	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_membership;$/;"	t	typeref:enum:__anon12
+uv_mutex_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef pthread_mutex_t uv_mutex_t;$/;"	t
+uv_mutex_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef CRITICAL_SECTION uv_mutex_t;$/;"	t
+uv_now	../../third_party/libuv-v1.9.1/src/uv-common.c	/^uint64_t uv_now(const uv_loop_t* loop) {$/;"	f
+uv_once_s	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef struct uv_once_s {$/;"	s
+uv_once_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef pthread_once_t uv_once_t;$/;"	t
+uv_once_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} uv_once_t;$/;"	t	typeref:struct:uv_once_s
+uv_os_fd_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef int uv_os_fd_t;$/;"	t
+uv_os_fd_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef HANDLE uv_os_fd_t;$/;"	t
+uv_os_sock_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef int uv_os_sock_t;$/;"	t
+uv_os_sock_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef SOCKET uv_os_sock_t;$/;"	t
+uv_passwd_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_passwd_s {$/;"	s
+uv_passwd_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_passwd_s uv_passwd_t;$/;"	t	typeref:struct:uv_passwd_s
+uv_pipe_connection_fields	../../third_party/libuv-v1.9.1/include/uv-win.h	458;"	d
+uv_pipe_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_pipe_s {$/;"	s
+uv_pipe_server_fields	../../third_party/libuv-v1.9.1/include/uv-win.h	453;"	d
+uv_pipe_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_pipe_s uv_pipe_t;$/;"	t	typeref:struct:uv_pipe_s
+uv_poll_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_poll_cb)(uv_poll_t* handle, int status, int events);$/;"	t
+uv_poll_event	../../third_party/libuv-v1.9.1/include/uv.h	/^enum uv_poll_event {$/;"	g
+uv_poll_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_poll_s {$/;"	s
+uv_poll_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_poll_s uv_poll_t;$/;"	t	typeref:struct:uv_poll_s
+uv_prepare_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_prepare_cb)(uv_prepare_t* handle);$/;"	t
+uv_prepare_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_prepare_s {$/;"	s
+uv_prepare_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_prepare_s uv_prepare_t;$/;"	t	typeref:struct:uv_prepare_s
+uv_print_active_handles	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void uv_print_active_handles(uv_loop_t* loop, FILE* stream) {$/;"	f
+uv_print_all_handles	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void uv_print_all_handles(uv_loop_t* loop, FILE* stream) {$/;"	f
+uv_process_flags	../../third_party/libuv-v1.9.1/include/uv.h	/^enum uv_process_flags {$/;"	g
+uv_process_options_s	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_process_options_s {$/;"	s
+uv_process_options_t	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_process_options_t;$/;"	t	typeref:struct:uv_process_options_s
+uv_process_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_process_s {$/;"	s
+uv_process_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_process_s uv_process_t;$/;"	t	typeref:struct:uv_process_s
+uv_queue_work	../../third_party/libuv-v1.9.1/src/threadpool.c	/^int uv_queue_work(uv_loop_t* loop,$/;"	f
+uv_read_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_read_cb)(uv_stream_t* stream,$/;"	t
+uv_realloc_func	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void* (*uv_realloc_func)(void* ptr, size_t size);$/;"	t
+uv_recv_buffer_size	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_recv_buffer_size(uv_handle_t* handle, int* value) {$/;"	f
+uv_ref	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void uv_ref(uv_handle_t* handle) {$/;"	f
+uv_replace_allocator	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_replace_allocator(uv_malloc_func malloc_func,$/;"	f
+uv_req_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_req_s {$/;"	s
+uv_req_size	../../third_party/libuv-v1.9.1/src/uv-common.c	/^size_t uv_req_size(uv_req_type type) {$/;"	f
+uv_req_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_req_s uv_req_t;$/;"	t	typeref:struct:uv_req_s
+uv_req_type	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_req_type;$/;"	t	typeref:enum:__anon7
+uv_run_mode	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_run_mode;$/;"	t	typeref:enum:__anon9
+uv_rusage_t	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_rusage_t;$/;"	t	typeref:struct:__anon20
+uv_rwlock_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef pthread_rwlock_t uv_rwlock_t;$/;"	t
+uv_rwlock_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^} uv_rwlock_t;$/;"	t	typeref:union:__anon25
+uv_sem_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef UV_PLATFORM_SEM_T uv_sem_t;$/;"	t
+uv_sem_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef HANDLE uv_sem_t;$/;"	t
+uv_send_buffer_size	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_send_buffer_size(uv_handle_t* handle, int *value) {$/;"	f
+uv_shutdown_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_shutdown_cb)(uv_shutdown_t* req, int status);$/;"	t
+uv_shutdown_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_shutdown_s {$/;"	s
+uv_shutdown_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_shutdown_s uv_shutdown_t;$/;"	t	typeref:struct:uv_shutdown_s
+uv_signal_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_signal_cb)(uv_signal_t* handle, int signum);$/;"	t
+uv_signal_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_signal_s {$/;"	s
+uv_signal_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_signal_s uv_signal_t;$/;"	t	typeref:struct:uv_signal_s
+uv_stat_t	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_stat_t;$/;"	t	typeref:struct:__anon11
+uv_stdio_container_s	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_stdio_container_s {$/;"	s
+uv_stdio_container_t	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_stdio_container_t;$/;"	t	typeref:struct:uv_stdio_container_s
+uv_stdio_flags	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_stdio_flags;$/;"	t	typeref:enum:__anon14
+uv_stop	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void uv_stop(uv_loop_t* loop) {$/;"	f
+uv_stream_connection_fields	../../third_party/libuv-v1.9.1/include/uv-win.h	406;"	d
+uv_stream_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_stream_s {$/;"	s
+uv_stream_server_fields	../../third_party/libuv-v1.9.1/include/uv-win.h	410;"	d
+uv_stream_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_stream_s uv_stream_t;$/;"	t	typeref:struct:uv_stream_s
+uv_strerror	../../third_party/libuv-v1.9.1/src/uv-common.c	/^const char* uv_strerror(int err) {$/;"	f
+uv_tcp_bind	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_tcp_bind(uv_tcp_t* handle,$/;"	f
+uv_tcp_connect	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_tcp_connect(uv_connect_t* req,$/;"	f
+uv_tcp_connection_fields	../../third_party/libuv-v1.9.1/include/uv-win.h	428;"	d
+uv_tcp_flags	../../third_party/libuv-v1.9.1/include/uv.h	/^enum uv_tcp_flags {$/;"	g
+uv_tcp_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_tcp_s {$/;"	s
+uv_tcp_server_fields	../../third_party/libuv-v1.9.1/include/uv-win.h	422;"	d
+uv_tcp_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_tcp_s uv_tcp_t;$/;"	t	typeref:struct:uv_tcp_s
+uv_thread_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_thread_cb)(void* arg);$/;"	t
+uv_thread_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef pthread_t uv_thread_t;$/;"	t
+uv_thread_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef HANDLE uv_thread_t;$/;"	t
+uv_timer_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_timer_cb)(uv_timer_t* handle);$/;"	t
+uv_timer_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_timer_s {$/;"	s
+uv_timer_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_timer_s uv_timer_t;$/;"	t	typeref:struct:uv_timer_s
+uv_timespec_t	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_timespec_t;$/;"	t	typeref:struct:__anon10
+uv_timeval_t	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_timeval_t;$/;"	t	typeref:struct:__anon19
+uv_tty_mode_t	../../third_party/libuv-v1.9.1/include/uv.h	/^} uv_tty_mode_t;$/;"	t	typeref:enum:__anon13
+uv_tty_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_tty_s {$/;"	s
+uv_tty_set_mode	../../third_party/libuv-v1.9.1/include/uv.h	/^inline int uv_tty_set_mode(uv_tty_t* handle, int mode) {$/;"	f
+uv_tty_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_tty_s uv_tty_t;$/;"	t	typeref:struct:uv_tty_s
+uv_udp_bind	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_udp_bind(uv_udp_t* handle,$/;"	f
+uv_udp_flags	../../third_party/libuv-v1.9.1/include/uv.h	/^enum uv_udp_flags {$/;"	g
+uv_udp_recv_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_udp_recv_cb)(uv_udp_t* handle,$/;"	t
+uv_udp_recv_start	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_udp_recv_start(uv_udp_t* handle,$/;"	f
+uv_udp_recv_stop	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_udp_recv_stop(uv_udp_t* handle) {$/;"	f
+uv_udp_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_udp_s {$/;"	s
+uv_udp_send	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_udp_send(uv_udp_send_t* req,$/;"	f
+uv_udp_send_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_udp_send_cb)(uv_udp_send_t* req, int status);$/;"	t
+uv_udp_send_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_udp_send_s {$/;"	s
+uv_udp_send_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_udp_send_s uv_udp_send_t;$/;"	t	typeref:struct:uv_udp_send_s
+uv_udp_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_udp_s uv_udp_t;$/;"	t	typeref:struct:uv_udp_s
+uv_udp_try_send	../../third_party/libuv-v1.9.1/src/uv-common.c	/^int uv_udp_try_send(uv_udp_t* handle,$/;"	f
+uv_uid_t	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^typedef uid_t uv_uid_t;$/;"	t
+uv_uid_t	../../third_party/libuv-v1.9.1/include/uv-win.h	/^typedef unsigned char uv_uid_t;$/;"	t
+uv_unref	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void uv_unref(uv_handle_t* handle) {$/;"	f
+uv_version	../../third_party/libuv-v1.9.1/src/version.c	/^unsigned int uv_version(void) {$/;"	f
+uv_version_string	../../third_party/libuv-v1.9.1/src/version.c	/^const char* uv_version_string(void) {$/;"	f
+uv_walk	../../third_party/libuv-v1.9.1/src/uv-common.c	/^void uv_walk(uv_loop_t* loop, uv_walk_cb walk_cb, void* arg) {$/;"	f
+uv_walk_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_walk_cb)(uv_handle_t* handle, void* arg);$/;"	t
+uv_work_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_work_cb)(uv_work_t* req);$/;"	t
+uv_work_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_work_s {$/;"	s
+uv_work_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_work_s uv_work_t;$/;"	t	typeref:struct:uv_work_s
+uv_write_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef void (*uv_write_cb)(uv_write_t* req, int status);$/;"	t
+uv_write_s	../../third_party/libuv-v1.9.1/include/uv.h	/^struct uv_write_s {$/;"	s
+uv_write_t	../../third_party/libuv-v1.9.1/include/uv.h	/^typedef struct uv_write_s uv_write_t;$/;"	t	typeref:struct:uv_write_s
+waiters_count	../../third_party/libuv-v1.9.1/include/uv-win.h	/^    unsigned int waiters_count;$/;"	m	struct:__anon23::__anon24
+waiters_count_lock	../../third_party/libuv-v1.9.1/include/uv-win.h	/^    CRITICAL_SECTION waiters_count_lock;$/;"	m	struct:__anon23::__anon24
+watcher_queue	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  void* watcher_queue[2];$/;"	m	struct:uv__io_s
+wfd	../../third_party/libuv-v1.9.1/include/uv-unix.h	/^  int wfd;$/;"	m	struct:uv__async
+work	../../third_party/libuv-v1.9.1/include/uv-threadpool.h	/^  void (*work)(struct uv__work *w);$/;"	m	struct:uv__work
+work_cb	../../third_party/libuv-v1.9.1/include/uv.h	/^  uv_work_cb work_cb;$/;"	m	struct:uv_work_s
+work_cb	main.c	/^static void work_cb(uv_work_t* req) {$/;"	f	file:
+worker	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static void worker(void* arg) {$/;"	f	file:
+wq	../../third_party/libuv-v1.9.1/include/uv-threadpool.h	/^  void* wq[2];$/;"	m	struct:uv__work
+wq	../../third_party/libuv-v1.9.1/src/threadpool.c	/^static QUEUE wq;$/;"	v	file:
+write_req_t	main.c	/^} write_req_t;$/;"	t	typeref:struct:__anon1	file:
+write_semaphore_	../../third_party/libuv-v1.9.1/include/uv-win.h	/^    HANDLE write_semaphore_;$/;"	m	struct:__anon25::__anon26
+zero_statbuf	../../third_party/libuv-v1.9.1/src/fs-poll.c	/^static uv_stat_t zero_statbuf;$/;"	v	file:
