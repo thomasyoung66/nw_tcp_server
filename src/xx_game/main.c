@@ -23,7 +23,8 @@
 #include "task.h"
 #include <stdio.h>
 #include <stdlib.h>
- #include <string.h>
+#include <string.h>
+#include <unistd.h>
 
 
 typedef struct {
@@ -32,10 +33,10 @@ typedef struct {
 } write_req_t;
 
 uv_buf_t uv_buf_malloc(char* base, unsigned int len) {
-  uv_buf_t buf;
-  buf.base = base;
-  buf.len = len;
-  return buf;
+	uv_buf_t buf;
+	buf.base = base;
+	buf.len = len;
+	return buf;
 }
 
 
@@ -58,13 +59,14 @@ typedef struct _queue_data{
 	uv_stream_t * handle;
 }queue_data;
 
-static void work_cb(uv_work_t* req) {
+static void work_cb(uv_work_t* req) 
+{
 	printf("%ld %s ....\n",pthread_self(),__FUNCTION__);
 	queue_data * qd=(queue_data *)req->data;
 
 	write_req_t * wr = (write_req_t*) malloc(sizeof *wr);
 	ASSERT(wr != NULL);
-	
+
 	wr->buf = uv_buf_init(strdup("ok\r\n"), 4);
 
 	if (uv_write(&wr->req, qd->handle, &wr->buf, 1, after_write)) {
@@ -73,7 +75,8 @@ static void work_cb(uv_work_t* req) {
 }
 
 
-static void after_work_cb(uv_work_t* req, int status) {
+static void after_work_cb(uv_work_t* req, int status) 
+{
 	printf("%ld %s ....\n",pthread_self(),__FUNCTION__);
 	free(req->data);
 	free(req);
@@ -87,7 +90,8 @@ int send_work_queue(queue_data * qd)
 	queue->data=qd;
 	uv_queue_work(uv_default_loop(), queue, work_cb, after_work_cb);
 }
-static void after_write(uv_write_t* req, int status) {
+static void after_write(uv_write_t* req, int status) 
+{
 	write_req_t* wr;
 
 	/* Free the read/write buffer and the request */
@@ -105,19 +109,21 @@ static void after_write(uv_write_t* req, int status) {
 }
 
 
-static void after_shutdown(uv_shutdown_t* req, int status) {
+static void after_shutdown(uv_shutdown_t* req, int status) 
+{
+	printf("shutdown....%p\n",req->handle);
 	uv_close((uv_handle_t*) req->handle, on_close);
 	free(req);
 }
 
 
-static void after_read(uv_stream_t* handle,
-		ssize_t nread,
-		const uv_buf_t* buf) {
+static void after_read(uv_stream_t* handle, ssize_t nread, const uv_buf_t* buf) 
+{
 	int i;
 	write_req_t *wr;
 	uv_shutdown_t* sreq;
 
+	printf("read.....%p\n",handle);
 	if (nread < 0) {
 		/* Error or EOF */
 		ASSERT(nread == UV_EOF);
@@ -132,6 +138,11 @@ static void after_read(uv_stream_t* handle,
 		/* Everything OK, but nothing read. */
 		free(buf->base);
 		return;
+	}
+	if (strncmp(buf->base,"quit",4)==0){
+		free(buf->base);
+		uv_close((uv_handle_t*)handle, on_close);
+		return ;
 	}
 	printf("thread=%ld length=%d buffer=%s\n",pthread_self(),buf->len,buf->base);
 	queue_data * qd=(queue_data *) malloc(sizeof(queue_data));
@@ -167,22 +178,33 @@ static void after_read(uv_stream_t* handle,
 }
 
 
-static void on_close(uv_handle_t* peer) {
+static void on_close(uv_handle_t* peer) 
+{
+	printf("on close...%p\n",peer);
 	free(peer);
 }
 
 
-static void echo_alloc(uv_handle_t* handle,
-		size_t suggested_size,
-		uv_buf_t* buf) {
+static void echo_alloc(uv_handle_t* handle, size_t suggested_size, uv_buf_t* buf) 
+{
 	buf->base = (char *)malloc(suggested_size);
 	buf->len = suggested_size;
 }
 
 
+
+static void idle_cb(uv_idle_t* idle) 
+{
+	printf("idle cb.....\n");
+
+	uv_close((uv_handle_t*) idle, NULL);
+	free(idle);
+}
+
 static void on_connection(uv_stream_t* server, int status) {
 	uv_stream_t* stream;
 	int r;
+	uv_idle_t * tcp_idle=NULL;
 
 	printf("begin connection...\n");
 	if (status != 0) {
@@ -217,6 +239,13 @@ static void on_connection(uv_stream_t* server, int status) {
 	ASSERT(r == 0);
 
 	r = uv_read_start(stream, echo_alloc, after_read);
+
+	tcp_idle=(uv_idle_t *)malloc(sizeof(uv_idle_t));
+	uv_idle_init(loop, tcp_idle);
+	printf("idle memory=%p\n",tcp_idle);
+	tcp_idle->data=stream;
+	uv_idle_start(tcp_idle, idle_cb);
+
 	printf("end connection...\n");
 	ASSERT(r == 0);
 }
@@ -289,7 +318,23 @@ static int tcp4_echo_start(int port) {
 }
 
 
+static uv_timer_t timer_handle;
 
+static void timer_cb(uv_timer_t* handle) {
+	uv_timer_stop(&timer_handle);
+	uv_timer_start(&timer_handle, timer_cb, 1000, 0);
+}
+
+
+static uv_idle_t idle_handle;
+uv_prepare_t uv_prepare_sleep;
+
+static void idle_cb_main(uv_idle_t* handle)
+{
+
+  static int idle_cb_called = 0;
+	usleep(0);
+}
 
 
 int main(int argc,char * argv[])
@@ -298,6 +343,16 @@ int main(int argc,char * argv[])
 
 	if (tcp4_echo_start(TEST_PORT))
 		return 1;
+
+	uv_timer_init(loop, &timer_handle);
+	uv_timer_start(&timer_handle, timer_cb, 1000, 0);
+
+	 uv_prepare_init(loop, &uv_prepare_sleep);
+
+    uv_idle_init(uv_default_loop(), &idle_handle);
+
+    uv_idle_start(&idle_handle, idle_cb_main);
+
 
 	uv_run(loop, UV_RUN_DEFAULT);
 	return 0;
