@@ -1,0 +1,4 @@
+log4cxx:
+	./configure --prefix=/home/yls/nw_tcp_server/os/log4cxx
+	make 
+	make install
