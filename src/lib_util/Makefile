@@ -31,8 +31,8 @@ CC              = g++
 
 # ------------  compiler flags  --------------------------------------------------------
 #CFLAGS          = -Wall -O2         # Do optimize. Produce no debugging information.
-CFLAGS          = -Wall -O3 -g  -Wno-deprecated     -I../tbnet/include/tbnet    \
-  -I../tbnet/include/tbsys
+CFLAGS          = -Wall -O3 -g  -Wno-deprecated     -I../include    \
+
 
 # ------------  linker-Flags  ----------------------------------------------------------
 LFLAGS          = -g
@@ -41,26 +41,11 @@ LFLAGS          = -g
 EXECUTABLE      = main
 
 # ------------  list of all source files  ----------------------------------------------
-C_SOURCES       =  ./json-c/arraylist.c \
-	./json-c/debug.c \
-	./json-c/json_object.c \
-	./json-c/json_tokener.c \
-	./json-c/json_util.c \
-	./json-c/linkhash.c \
-	./json-c/random_seed.c \
-	./json-c/printbuf.c \
-	wkl_packet.c \
+C_SOURCES       =  \
 	xxtea.c
 
 
-CPP_SOURCES     =	Util.cpp Json.cpp AppConfig.cpp tc_mysql.cpp \
-	db.cpp \
-	MemoryPool.cpp \
-	ServiceClient.cpp \
-	GlobalVar.cpp \
-	EventHandler.cpp \
-	MemoryGroup.cpp \
-	Timer.cpp \
+CPP_SOURCES     =	Util.cpp  tc_mysql.cpp \
 	Md5.cpp \
 	Base64.cpp
 
@@ -106,7 +91,6 @@ PREREQUISITES  += $(addprefix .,${CPP_SOURCES:.$(CPP_EXTENSION)=.d} )
 # ------------  make the executable  ---------------------------------------------------
 $(EXECUTABLE):	$(OBJECTS)
 		ar rcs libUtil.a $(OBJECTS)
-		cp -rf wkl_packet.c wkl_packet.h ../../client/obd/.
 #								$(CC) $(ALL_LFLAGS) -o $(EXECUTABLE) $(OBJECTS)
 #								./$(EXECUTABLE)
 

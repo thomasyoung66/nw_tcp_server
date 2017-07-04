@@ -3,7 +3,7 @@
 #include <sstream>
 #include <stdio.h>
 #include <string.h>
-#include "GlobalVar.h"
+//#define ENABLE_LOG 1
 namespace taf
 {
 
@@ -253,7 +253,9 @@ void TC_Mysql::execute(const string& sSql)
 
 	if (iRet != 0) {
 		string err="[TC_Mysql::execute]: mysql_query: [ " + sSql + " ] :" + string(mysql_error(_pstMql));
+#ifdef ENABLE_LOG
 		msglog(ERROR,err.c_str());
+#endif
 #if 0
 		throw TC_Mysql_Exception("[TC_Mysql::execute]: mysql_query: [ " + sSql + " ] :" + string(mysql_error(_pstMql)));
 #endif
@@ -297,7 +299,9 @@ TC_Mysql::MysqlData TC_Mysql::queryRecord(const string& sSql)
 
 	if (iRet != 0) {
 		string e="[TC_Mysql::execute]: mysql_query: [ " + sSql + " ] :" + string(mysql_error(_pstMql));
+#ifdef ENABLE_LOG
 		msglog(ERROR,"%s",e.c_str());
+#endif
 		return data;
 #if  0
 		throw TC_Mysql_Exception("[TC_Mysql::execute]: mysql_query: [ " + sSql + " ] :" + string(mysql_error(_pstMql)));
@@ -308,7 +312,9 @@ TC_Mysql::MysqlData TC_Mysql::queryRecord(const string& sSql)
 
 	if(pstRes == NULL) {
 		string e="[TC_Mysql::queryRecord]: mysql_store_result: " + sSql + " : " + string(mysql_error(_pstMql));
+#ifdef ENABLE_LOG
 		msglog(ERROR,"%s",e.c_str());
+#endif
 		return data;
 #if  0
 		throw TC_Mysql_Exception("[TC_Mysql::queryRecord]: mysql_store_result: " + sSql + " : " + string(mysql_error(_pstMql)));
@@ -348,7 +354,9 @@ size_t TC_Mysql::updateRecord(const string &sTableName, const RECORD_DATA &mpCol
 {
 	string sSql = buildUpdateSQL(sTableName, mpColumns, sCondition);
 //	printf("update sql=%s\n",sSql.c_str());
+#ifdef ENABLE_LOG
 	msglog(INFO,"update Record=%s",sSql.c_str());
+#endif
 	execute(sSql);
 
 	return mysql_affected_rows(_pstMql);

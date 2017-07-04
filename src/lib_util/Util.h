@@ -28,8 +28,6 @@
 #ifndef _Util_H_
 #define _Util_H_
 
-#include "ImudComm.h"
-#include "./json-c/json_tokener.h"
 #include <netdb.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -81,8 +79,6 @@ public:
 	static ssize_t writen(int fd, const void *vptr, size_t n);
 	static string getUserPath(const char * rootPath,const char * uId);
 	static void hexdump(const void *_data, size_t size);
-	static const char * getUserNick(json_object * obj);
-	static const char * getUserIcon(json_object * obj);
 	static int sendUdp(const char * host, int port, const char * content);
 	// ====================  OPERATIONS  =========================================
 	// ====================  ACCESS      =========================================

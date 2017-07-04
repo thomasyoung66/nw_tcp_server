@@ -41,7 +41,6 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <sys/time.h>
-#include "GlobalVar.h"
 
 
 using namespace sns;
@@ -67,28 +66,6 @@ Util::~Util ()
 {
 }  // -----  end of method Util::~Util  (destructor)  -----
 
-const char * Util::getUserNick(json_object * obj)
-{
-	json_object  * config=Json::getObject(obj, "config");
-	if (config==NULL)
-		return "";
-	return Json::getString(obj,"nick","");	
-	
-}
-const char * Util::getUserIcon(json_object * obj)
-{
-	int n=0;
-	json_object  * config=Json::getObject(obj, "himage");
-	if (config==NULL)
-		return "";
-	//return Json::getString(obj,"nick","");	
-	int serverTotal = json_object_array_length(config);
-	if (serverTotal <= 0) {
-			return "";
-	}
-	json_object * curr = json_object_array_get_idx(config, n-1);
-	return Json::getString(obj,"url","");	
-}
 string Util::format(const char * fmt,...)
 {
     char buffer[4096];
@@ -398,30 +375,6 @@ string Util::getUserPath(const char * rootPath,const char * uId)
 	return fullPath;
 }
 
-int Util::sendUdp(const char * host, int port, const char * content)
-{
-    int sockfd;
-    struct sockaddr_in addr;
-
-    sockfd = socket(AF_INET, SOCK_DGRAM, 0);
-    if(sockfd < 0) { 
-		msglog(ERROR,"socket error in SendUdp");
-        return -1;
-    }    
-    bzero(&addr, sizeof(struct sockaddr_in));
-    addr.sin_family = AF_INET;
-    addr.sin_port = htons(port);
-    if(inet_aton(host, &addr.sin_addr) < 0) { 
-		msglog(ERROR,"socket error in SendUdp");
-        close(sockfd);
-        return 0;
-    }    
-    int ret=sendto(sockfd, content, strlen(content), 0, (const sockaddr* )&addr, sizeof(struct sockaddr_in));
-	if (ret<=0)
-		msglog(ERROR,"sendto udp(%s) error in send to %s:%d",content,host,port);
-    close(sockfd);
-    return 0;
-}
 
 
 void Util::hexdump(const void *_data, size_t size)
@@ -431,7 +384,7 @@ void Util::hexdump(const void *_data, size_t size)
 
 
     while (offset < size) {
-        printf("0x%02x  ", offset);
+        printf("0x%02x  ", (int)offset);
         size_t n = size - offset;
         if (n > 16) {
             n = 16;
