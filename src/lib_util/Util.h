@@ -41,8 +41,6 @@
 #endif
 using namespace std;
 
-namespace sns
-{
 
 class Util
 {
@@ -89,5 +87,4 @@ protected:
 private:
 
 };  // -----  end of class  Util  -----
-}
 #endif // _Util_H_

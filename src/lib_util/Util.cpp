@@ -43,9 +43,6 @@
 #include <sys/time.h>
 
 
-using namespace sns;
-namespace sns
-{
 
 //--------------------------------------------------------------------------------------
 //       Class:  Util
@@ -415,6 +412,5 @@ void Util::hexdump(const void *_data, size_t size)
 
 }
 
-}
 #endif
 

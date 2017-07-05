@@ -31,7 +31,7 @@ CC              = g++
 
 # ------------  compiler flags  --------------------------------------------------------
 #CFLAGS          = -Wall -O2         # Do optimize. Produce no debugging information.
-CFLAGS          = -Wall -O3 -g  -Wno-deprecated     -I../include    \
+CFLAGS          = -Wall -O3 -g  -Wno-deprecated     -I../include  -I../../os/include/  \
 
 
 # ------------  linker-Flags  ----------------------------------------------------------
@@ -42,12 +42,15 @@ EXECUTABLE      = main
 
 # ------------  list of all source files  ----------------------------------------------
 C_SOURCES       =  \
-	xxtea.c
+	xxtea.c \
+	iniparser.c \
+	dictionary.c
 
 
 CPP_SOURCES     =	Util.cpp  tc_mysql.cpp \
 	Md5.cpp \
-	Base64.cpp
+	Base64.cpp \
+	Log.cpp
 
 # ------------  additional system include directories  ---------------------------------
 GLOBAL_INC_DIR  = 

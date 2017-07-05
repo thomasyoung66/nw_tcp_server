@@ -10,7 +10,7 @@
 #               make zip          (generate compressed archive               )
 #
 #      Version: 1.0
-#      Created: 03/23/2016 05:52:18 PM CST 
+#      Created: 05/14/2015 04:43:06 PM CST 
 #     Revision: ---
 #
 #       Author: YangLiuShun (Thomas Young)
@@ -24,27 +24,31 @@
 #===============================================================================
 
 # ------------  C++ file name extensions  ----------------------------------------------
-CPP_EXTENSION  = cc
+CPP_EXTENSION  = cpp
 
 # ------------  compiler  --------------------------------------------------------------
 CC              = g++
 
 # ------------  compiler flags  --------------------------------------------------------
 #CFLAGS          = -Wall -O2         # Do optimize. Produce no debugging information.
-CFLAGS          = -O2 -g  -I../../third_party/libuv-v1.9.1/include/    # Do not optimize. Produce debugging information.
-#CFLAGS          = -Wall -O2 -g  -I../../third_party/libuv-v1.9.1/include/    # Do not optimize. Produce debugging information.
+CFLAGS          = -g -Wall -O3 -fPIC  -I../../os/include  -Wno-deprecated -Werror 
 
 # ------------  linker-Flags  ----------------------------------------------------------
-LFLAGS          = -g -lssl -L../../third_party/libuv-v1.9.1/.libs/ -lrt
+LFLAGS          = -L../../os/lib -g -lpthread -lrt  -lssl  -luv
 
 # ------------  name of the executable  ------------------------------------------------
-EXECUTABLE      = main
+EXECUTABLE      = ./bin/xx_game
 
 # ------------  list of all source files  ----------------------------------------------
-C_SOURCES       = main.c
+C_SOURCES       = 
 
-CPP_SOURCES     = 
+CPP_SOURCES     = main.cpp
 
+STATIC_LIBS     = ../lib_app/libapp.a \
+	../lib_net/libnet.a \
+	../lib_util/libUtil.a \
+	-llog4cxx -luv
+#	../../os/lib/liblog4cxx.a 
 # ------------  additional system include directories  ---------------------------------
 GLOBAL_INC_DIR  = 
 
@@ -86,7 +90,10 @@ PREREQUISITES  += $(addprefix .,${CPP_SOURCES:.$(CPP_EXTENSION)=.d} )
 
 # ------------  make the executable  ---------------------------------------------------
 $(EXECUTABLE):	$(OBJECTS)
-								$(CC) $(ALL_LFLAGS) -o $(EXECUTABLE) $(OBJECTS) ../../third_party/libuv-v1.9.1/.libs/libuv.a
+	make -C ../lib_util
+	make -C ../lib_net
+	make -C ../lib_app
+								$(CC) $(ALL_LFLAGS) -o $(EXECUTABLE) $(OBJECTS) $(STATIC_LIBS)
 #								./$(EXECUTABLE)
 
 # ------------  list of the automatically generated prerequisites  ---------------------
@@ -117,8 +124,7 @@ $(EXECUTABLE):	$(OBJECTS)
 # ------------  remove generated files  ------------------------------------------------
 # ------------  remove hidden backup files  --------------------------------------------
 clean:
-							rm -rf core.*
-								rm  --force  $(EXECUTABLE) *.o
+								rm  --force  $(EXECUTABLE)  *.o core.*
 								rm  --force  *~
 
 # ------------ tarball generation ------------------------------------------------------
@@ -135,7 +141,19 @@ tarball:
 zip:
 					lokaldir=`pwd`; lokaldir=$${lokaldir##*/}; \
 					zip -r  $$lokaldir.zip * -x $(ZIP_EXCLUDE)
+astyle:
+	astyle --style=linux -t -y -p *.h *.cpp
+	rm -rf *.orig
 tag:
-	 ctags * ../../third_party/libuv-v1.9.1/include/* ../../third_party/libuv-v1.9.1/src/*
+	 ctags *.* ../libutil/*.* ../tbnet/tbsys/src/*.* ../tbnet/tbnet/src/*.*  ../../snsapi/*.* ../libutil/json-c/*.*
+release:
+#	cp -rf  impush /home/micro_chat/impush/bin/.
+#	svn commit -m "auto commit" /home/micro_chat/impush/bin
+	cp -rf  impush /home/micro_chat_sd/impush/bin/.
+	svn commit -m "auto commit" /home/micro_chat_sd/impush/bin
+test:
+	cp -rf  impush /home/micro_chat/impush/bin/.
+	svn commit -m "auto commit" /home/micro_chat/impush/bin
+
 # ======================================================================================
 # vim: set tabstop=2: set shiftwidth=2: 
