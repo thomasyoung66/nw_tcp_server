@@ -1,0 +1,88 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+  <!--
+  %m 输出代码中指定的消息
+  %p 输出优先级，即DEBUG，INFO，WARN，ERROR，FATAL
+  %r 输出自应用启动到输出该log信息耗费的毫秒数
+  %c 输出所属的类目，通常就是所在类的全名
+  %t 输出产生该日志事件的线程名
+  %n 输出一个回车换行符，Windows平台为“\r\n”，Unix平台为“\n”
+  %d 输出日志时间点的日期或时间，默认格式为ISO8601，也可以在其后指定格式，比如：%d{yyy MMM dd HH:mm:ss,SSS}，输出2008年11月14日 15:16:17,890
+  %l 输出日志事件的发生位置，包括类目名、发生的线程，以及在代码中的行数。
+  
+  
+  Log4j提供的appender有以下几种：
+  org.apache.log4j.ConsoleAppender 控制台
+  org.apache.log4j.FileAppender 文件
+  org.apache.log4j.DailyRollingFileAppender 每天产生一个日志文件
+  org.apache.log4j.RollingFileAppender 文件大小到达指定尺寸的时候产生一个新的文件
+  org.apache.log4j.WriterAppender 将日志信息以流格式发送到任意指定的地方
+  
+  
+  Log4j提供的Layout有以下几种：
+  org.apache.log4j.HTMLLayout 以HTML表格形式布局
+  org.apache.log4j.PatternLayout 可以灵活地指定布局模式
+  org.apache.log4j.SimpleLayout 包含日志信息的级别和信息字符串
+  org.apache.log4j.TTCCLayout 包含日志产生的时间、线程、类别等等信息
+  -->
+
+  <!-- 性能统计日志输出 -->
+  <appender name="PerformanceAppender" additivity="false" class="org.apache.log4j.RollingFileAppender">
+    <!-- The file to log Performance calls -->
+    <param name="file" value="/home/yls/nw_tcp_server/src/xx_game/log/xx_game.log" />
+    <param name="append" value="true" />
+    <param name="BufferedIO" value="true"/>
+    <param name="maxFileSize" value="10000KB" />
+    <param name="maxBackupIndex" value="1" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <!-- The log message pattern -->
+      <param name="ConversionPattern" value="%5p %d{ISO8601} [%t] [%c] %m%n"/>
+    </layout>
+  </appender>
+
+  
+    <!-- 性能统计日志输出 -->
+  <appender name="defaultAppender" additivity="false" class="org.apache.log4j.RollingFileAppender">
+    <!-- The file to log Performance calls -->
+    <param name="file" value="/home/yls/nw_tcp_server/src/xx_game/log/xx_game.log" />
+    <param name="append" value="true" />
+    <param name="BufferedIO" value="true"/>
+    <param name="maxFileSize" value="10000KB" />
+    <param name="maxBackupIndex" value="1" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <!-- The log message pattern -->
+      <param name="ConversionPattern" value="%5p %d{ISO8601} [%F, %L] %m%n"/>
+    </layout>
+  </appender>
+  
+  <!-- 命令行日志输出 -->
+  <appender name="Console" additivity="false" class="org.apache.log4j.ConsoleAppender">
+    <!-- Logs to Console -->
+    <layout class="org.apache.log4j.PatternLayout">
+      <!-- The log message pattern -->
+      <param name="ConversionPattern" value="%5p %d{ISO8601} [%F, %L] %m%n"/>
+    </layout>
+  </appender>
+
+  <logger name="Performance_logger" additivity="false">
+    <!-- set logger setting -->
+    <!-- 设置级别 -->
+    <level value="all"/>
+
+    <!-- 设置日志输出-->
+    <!-- 输出到命令行 -->
+    <!--<appender-ref ref="Console" />-->
+    <!--输出到默认日志文件 -->
+    <appender-ref ref="defaultAppender" />
+    <!--根据需要可单独输出到特定文件 -->
+    <!--<appender-ref ref="PerformanceAppender" />-->
+  </logger>
+  
+  <root>
+    <priority value="all" />
+    <appender-ref ref="defaultAppender" />
+    <!-- <appender-ref ref="Console" /> -->
+  </root>
+</log4j:configuration>

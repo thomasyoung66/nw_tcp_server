@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+  <appender name="PerformanceAppender" additivity="false" class="org.apache.log4j.RollingFileAppender">
+    <param name="file" value="/home/yls/nw_tcp_server/src/xx_game/log/xx_game.log" />
+    <param name="append" value="true" />
+    <param name="BufferedIO" value="true"/>
+    <param name="maxFileSize" value="10000KB" />
+    <param name="maxBackupIndex" value="1" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%5p %d{ISO8601} [%t] [%c] %m%n"/>
+    </layout>
+  </appender>
+
+  
+  <appender name="defaultAppender" additivity="false" class="org.apache.log4j.RollingFileAppender">
+    <param name="file" value="/home/yls/nw_tcp_server/src/xx_game/log/xx_game.log" />
+    <param name="append" value="true" />
+    <param name="BufferedIO" value="false"/>
+    <param name="maxFileSize" value="100000KB" />
+    <param name="maxBackupIndex" value="1" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d{ISO8601} %t %5p [%F:%L] [%c] %m%n"/>
+    </layout>
+  </appender>
+  
+  <appender name="Console" additivity="false" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%5p %d{ISO8601} %t [%F:%L] %c %m%n"/>
+    </layout>
+  </appender>
+
+
+  <logger name="Performance_logger" additivity="false">
+    <!-- set logger setting -->
+    <!-- 设置级别 -->
+    <level value="debug"/>
+
+    <!-- 设置日志输出-->
+    <!-- 输出到命令行 -->
+    <!--<appender-ref ref="Console" />-->
+    <!--输出到默认日志文件 -->
+    <appender-ref ref="defaultAppender" />
+    <!--根据需要可单独输出到特定文件 -->
+    <!--<appender-ref ref="PerformanceAppender" />-->
+  </logger>
+
+  
+  <root>
+    <priority value="all" />
+    <appender-ref ref="defaultAppender" />
+  </root>
+</log4j:configuration>
