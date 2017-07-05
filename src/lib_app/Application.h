@@ -27,6 +27,13 @@
 #ifndef _Application_H_
 #define _Application_H_
 
+#include "Global.h"
+extern "C" {
+#include "../lib_util/iniparser.h"
+}
+#include "../lib_util/Log.h"
+#include "../lib_util/Util.h"
+#include "../lib_net/TcpServer.h"
 class Application
 {
 
@@ -34,7 +41,7 @@ class Application
 
     // ====================  LIFECYCLE   ========================================= 
 
-    Application ();                    // constructor 
+    Application (int argc,char * argv[]);                    // constructor 
     Application ( const Application &other );  // copy constructor 
     ~Application ();                   // destructor 
 
@@ -43,16 +50,26 @@ class Application
     const Application& operator = ( const Application &other );  // assignemnt operator 
 
 	virtual const char * class_name() const { return "Application"; };
-    
+
+	Global g;    
+	int run();
+	int init();
 	// ====================  OPERATIONS  ========================================= 
 
     // ====================  ACCESS      ========================================= 
 
     // ====================  INQUIRY     ========================================= 
-
+	int initConfig(const char * path);
+	Log * getLog(){
+		return &log;
+	}
   protected:
 
   private:
-
+		Log log;
+		TcpServer tcpServer;
+		dictionary  *   ini ;
+	 LoggerPtr logger ;
 };  // -----  end of class  Application  ----- 
+extern Application * app;
 #endif // _Application_H_

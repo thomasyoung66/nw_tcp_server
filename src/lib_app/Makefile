@@ -31,7 +31,7 @@ CC              = g++
 
 # ------------  compiler flags  --------------------------------------------------------
 #CFLAGS          = -Wall -O2         # Do optimize. Produce no debugging information.
-CFLAGS          = -Wall -O3 -g  -Wno-deprecated     -I../include    \
+CFLAGS          = -Werror -Wall -O3 -g  -Wno-deprecated     -I../../os/include/  \
 
 
 # ------------  linker-Flags  ----------------------------------------------------------
