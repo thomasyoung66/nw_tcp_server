@@ -42,7 +42,7 @@ EXECUTABLE      = ./bin/xx_game
 # ------------  list of all source files  ----------------------------------------------
 C_SOURCES       = 
 
-CPP_SOURCES     = main.cpp
+CPP_SOURCES     = main.cpp LoginEventHandler.cpp
 
 STATIC_LIBS     = ../lib_app/libapp.a \
 	../lib_net/libnet.a \

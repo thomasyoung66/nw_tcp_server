@@ -31,7 +31,7 @@ CC              = g++
 
 # ------------  compiler flags  --------------------------------------------------------
 #CFLAGS          = -Wall -O2         # Do optimize. Produce no debugging information.
-CFLAGS          = -Wall -O0 -g      # Do not optimize. Produce debugging information.
+CFLAGS          = -Wall -O0 -g  -I../../os/include/    # Do not optimize. Produce debugging information.
 
 # ------------  linker-Flags  ----------------------------------------------------------
 LFLAGS          = -g
@@ -85,7 +85,7 @@ PREREQUISITES  += $(addprefix .,${CPP_SOURCES:.$(CPP_EXTENSION)=.d} )
 
 # ------------  make the executable  ---------------------------------------------------
 $(EXECUTABLE):	$(OBJECTS)
-								$(CC) $(ALL_LFLAGS) -o $(EXECUTABLE) $(OBJECTS)
+								$(CC) $(ALL_LFLAGS) -o $(EXECUTABLE) $(OBJECTS) ../../os/lib/libuv.a -lpthread
 #								./$(EXECUTABLE)
 
 # ------------  list of the automatically generated prerequisites  ---------------------

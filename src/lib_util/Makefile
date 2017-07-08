@@ -50,7 +50,11 @@ C_SOURCES       =  \
 CPP_SOURCES     =	Util.cpp  tc_mysql.cpp \
 	Md5.cpp \
 	Base64.cpp \
-	Log.cpp
+	Log.cpp \
+	json/json_reader.cpp \
+	json/json_writer.cpp \
+	json/json_value.cpp \
+	Json.cpp
 
 # ------------  additional system include directories  ---------------------------------
 GLOBAL_INC_DIR  = 
@@ -105,7 +109,8 @@ $(EXECUTABLE):	$(OBJECTS)
 #								gcc -c $(ALL_CFLAGS) $@ ${@:.o=.c}
 								gcc -c $(ALL_CFLAGS)  -o $@ ${@:.o=.c}
 %.o:						%.$(CPP_EXTENSION)
-								$(CC) -c $(ALL_CFLAGS) $< 
+								$(CC) -c $(ALL_CFLAGS)  -o $@ $< 
+								#$(CC) -c $(ALL_CFLAGS) $< 
 
 # ------------  make the prerequisites  ------------------------------------------------
 #  echoing of the sed command is suppressed by the leading @

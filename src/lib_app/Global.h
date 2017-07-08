@@ -1,19 +1,19 @@
 /*
  * =====================================================================================
- * 
+ *
  *        Filename:  GLOBAL
- * 
- *     Description:  
- * 
+ *
+ *     Description:
+ *
  *         Version:  1.0
  *         Created:  07/04/2017 12:29:59 AM PDT
  *        Revision:  none
  *        Compiler:  gcc
- * 
+ *
  *          Author:  YangLiuShun (Thomas Young)
  *         Company:  no name company
  *           Email:  65619882@qq.com
- * 
+ *
  * =====================================================================================
  */
 
@@ -21,7 +21,7 @@
 
 // =====================================================================================
 //        Class:  Global
-//  Description:  
+//  Description:
 // =====================================================================================
 
 #ifndef _Global_H_
@@ -30,29 +30,32 @@
 class Global
 {
 
-  public:
+public:
 
-    // ====================  LIFECYCLE   ========================================= 
+	// ====================  LIFECYCLE   =========================================
 
-    Global ();                    // constructor 
-    Global ( const Global &other );  // copy constructor 
-    ~Global ();                   // destructor 
+	Global ();                    // constructor
+	Global ( const Global &other );  // copy constructor
+	~Global ();                   // destructor
 
-    // ====================  OPERATORS   ========================================= 
+	// ====================  OPERATORS   =========================================
 
-    const Global& operator = ( const Global &other );  // assignemnt operator 
+	const Global& operator = ( const Global &other );  // assignemnt operator
 
-	virtual const char * class_name() const { return "Global"; };
-    
-	// ====================  OPERATIONS  ========================================= 
+	virtual const char * class_name() const
+	{
+		return "Global";
+	};
 
-    // ====================  ACCESS      ========================================= 
+	// ====================  OPERATIONS  =========================================
 
-    // ====================  INQUIRY     ========================================= 
+	// ====================  ACCESS      =========================================
 
-  protected:
+	// ====================  INQUIRY     =========================================
 
-  private:
+protected:
 
-};  // -----  end of class  Global  ----- 
+private:
+
+};  // -----  end of class  Global  -----
 #endif // _Global_H_

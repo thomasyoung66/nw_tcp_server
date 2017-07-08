@@ -1,15 +1,15 @@
 /*
  * =====================================================================================
- * 
+ *
  *        Filename:  TCPSERVER
- * 
- *     Description:  
- * 
+ *
+ *     Description:
+ *
  *         Version:  1.0
  *         Created:  07/04/2017 12:31:27 AM PDT
  *        Revision:  none
  *        Compiler:  gcc
- * 
+ *
  *          Author:  YangLiuShun (Thomas Young), 65619882@qq.com
  *         Company:  no name company
  * =====================================================================================
@@ -17,7 +17,7 @@
 
 // =====================================================================================
 //        Class:  TcpServer
-//  Description:  
+//  Description:
 // =====================================================================================
 
 #ifndef _TcpServer_CPP_
@@ -27,11 +27,16 @@
 #include "TcpServer.h"
 #include "../lib_app/Application.h"
 #include <map>
+#include <hash_map>
 #include <list>
-extern "C"{
+#include <iterator>
+#include <vector>
+extern "C" {
 #include "EventState.h"
 }
 
+using namespace std;
+TcpServer * tcp;
 static LoggerPtr logger ;
 
 typedef struct {
@@ -39,14 +44,16 @@ typedef struct {
 	uv_buf_t buf;
 } write_req_t;
 
-uv_buf_t uv_buf_malloc(char* base, unsigned int len) {
+uv_buf_t uv_buf_malloc(char* base, unsigned int len)
+{
 	uv_buf_t buf;
 	buf.base = base;
 	buf.len = len;
 	return buf;
 }
 
-static std::map<EventState *,EventState *> allEventState;
+static map<long, EventState *> allEventState;
+static map<int,EventHandler * >allEventHandler;
 
 static uv_loop_t* loop;
 
@@ -62,29 +69,29 @@ static void on_server_close(uv_handle_t* handle);
 static void on_connection(uv_stream_t*, int status);
 
 
-typedef struct _queue_data{
+typedef struct _queue_data {
 	uv_stream_t * handle;
-}queue_data;
+} queue_data;
 
-static void work_cb(uv_work_t* req) 
+static void work_cb(uv_work_t* req)
 {
-	msg_debug(logger,__FUNCTION__);
-	EventState * state=(EventState *)req->data;
+	msg_debug(logger, __FUNCTION__);
+	EventState * state = (EventState *)req->data;
 
-	write_req_t * wr = (write_req_t*) malloc(sizeof *wr);
+	write_req_t * wr = (write_req_t*) malloc(sizeof * wr);
 	ASSERT(wr != NULL);
 
 	wr->buf = uv_buf_init(strdup("ok\r\n"), 4);
 
-	if (uv_write(&wr->req,state->client, &wr->buf, 1, after_write)) {
+	if (uv_write(&wr->req, state->client, &wr->buf, 1, after_write)) {
 		FATAL("uv_write failed");
 	}
 }
 
 
-static void after_work_cb(uv_work_t* req, int status) 
+static void after_work_cb(uv_work_t* req, int status)
 {
-	msg_info(logger,"after_work_cb....");
+	msg_info(logger, "after_work_cb....");
 	//free(req->data);
 	free(req);
 }
@@ -92,13 +99,13 @@ static void after_work_cb(uv_work_t* req, int status)
 
 int send_work_queue(EventState * es)
 {
-	uv_work_t * queue=(uv_work_t *)malloc(sizeof(uv_work_t));
-	msg_info(logger,"send work queue...");
-	queue->data=es;
+	uv_work_t * queue = (uv_work_t *)malloc(sizeof(uv_work_t));
+	msg_info(logger, "send work queue...");
+	queue->data = es;
 	uv_queue_work(uv_default_loop(), queue, work_cb, after_work_cb);
 	return 0;
 }
-static void after_write(uv_write_t* req, int status) 
+static void after_write(uv_write_t* req, int status)
 {
 	write_req_t* wr;
 
@@ -111,32 +118,32 @@ static void after_write(uv_write_t* req, int status)
 		return;
 
 	msg_error(logger, Util::format("uv_write error: %s - %s\n",
-			uv_err_name(status),
-			uv_strerror(status)).c_str());
+	                               uv_err_name(status),
+	                               uv_strerror(status)).c_str());
 }
 
 
-static void after_shutdown(uv_shutdown_t* req, int status) 
+static void after_shutdown(uv_shutdown_t* req, int status)
 {
-	printf("shutdown....%p\n",req->handle);
+	printf("shutdown....%p\n", req->handle);
 	uv_close((uv_handle_t*) req->handle, on_close);
 	free(req);
 }
 
 
-static void after_read(uv_stream_t* handle, ssize_t nread, const uv_buf_t* buf) 
+static void after_read(uv_stream_t* handle, ssize_t nread, const uv_buf_t* buf)
 {
 	int i;
 	write_req_t *wr;
 	uv_shutdown_t* sreq;
 
-	msg_debug(logger,Util::format("read.....%p\n",handle));
+	msg_debug(logger, Util::format("read.....%p\n", handle));
 	if (nread < 0) {
 		/* Error or EOF */
 		ASSERT(nread == UV_EOF);
 
 		free(buf->base);
-		sreq = (uv_shutdown_t *)malloc(sizeof* sreq);
+		sreq = (uv_shutdown_t *)malloc(sizeof * sreq);
 		ASSERT(0 == uv_shutdown(sreq, handle, after_shutdown));
 		return;
 	}
@@ -146,7 +153,7 @@ static void after_read(uv_stream_t* handle, ssize_t nread, const uv_buf_t* buf)
 		free(buf->base);
 		return;
 	}
-	if (strncmp(buf->base,"quit",4)==0){
+	if (strncmp(buf->base, "quit", 4) == 0) {
 		free(buf->base);
 		uv_close((uv_handle_t*)handle, on_close);
 		return ;
@@ -164,7 +171,8 @@ static void after_read(uv_stream_t* handle, ssize_t nread, const uv_buf_t* buf)
 					free(buf->base);
 					uv_close((uv_handle_t*)handle, on_close);
 					return;
-				} else {
+				}
+				else {
 					uv_close(server, on_server_close);
 					server_closed = 1;
 				}
@@ -172,7 +180,7 @@ static void after_read(uv_stream_t* handle, ssize_t nread, const uv_buf_t* buf)
 		}
 	}
 
-	wr = (write_req_t*) malloc(sizeof *wr);
+	wr = (write_req_t*) malloc(sizeof * wr);
 	ASSERT(wr != NULL);
 	wr->buf = uv_buf_init(buf->base, nread);
 
@@ -182,14 +190,16 @@ static void after_read(uv_stream_t* handle, ssize_t nread, const uv_buf_t* buf)
 }
 
 
-static void on_close(uv_handle_t* peer) 
+static void on_close(uv_handle_t* peer)
 {
-	msg_debug(logger,Util::format("on close...%p\n",peer));
+	EventState * state=(EventState *)peer->data;
+	allEventState.erase((long)state);
+	free_event_state(state);
 	free(peer);
 }
 
 
-static void echo_alloc(uv_handle_t* handle, size_t suggested_size, uv_buf_t* buf) 
+static void echo_alloc(uv_handle_t* handle, size_t suggested_size, uv_buf_t* buf)
 {
 	buf->base = (char *)malloc(suggested_size);
 	buf->len = suggested_size;
@@ -198,55 +208,58 @@ static void echo_alloc(uv_handle_t* handle, size_t suggested_size, uv_buf_t* buf
 
 
 
-static void on_connection(uv_stream_t* server, int status) {
+static void on_connection(uv_stream_t* server, int status)
+{
 	uv_stream_t* stream;
 	int r;
 
-	msg_debug(logger,"begin connection...\n");
+	msg_debug(logger, "begin connection...\n");
 	if (status != 0) {
-		msg_error(logger,Util::format( "Connect error %s\n", uv_err_name(status)));
+		msg_error(logger, Util::format( "Connect error %s\n", uv_err_name(status)));
 	}
 	ASSERT(status == 0);
 	switch (serverType) {
-		case TCP:
-			stream = (uv_stream_t *)malloc(sizeof(uv_tcp_t));
-			ASSERT(stream != NULL);
-			r = uv_tcp_init(loop, (uv_tcp_t*)stream);
-			ASSERT(r == 0);
-			break;
+	case TCP:
+		stream = (uv_stream_t *)malloc(sizeof(uv_tcp_t));
+		ASSERT(stream != NULL);
+		r = uv_tcp_init(loop, (uv_tcp_t*)stream);
+		ASSERT(r == 0);
+		break;
 
-		default:
-			ASSERT(0 && "Bad serverType");
-			abort();
+	default:
+		ASSERT(0 && "Bad serverType");
+		abort();
 	}
 
-	EventState * state=alloc_init_event_state();
-	state->server=server;
-	state->client=stream;
-	state->lastHeartTime=time(NULL);
-	allEventState[state]=state;
+	EventState * state = alloc_init_event_state();
+	state->server = server;
+	state->client = stream;
+	state->lastHeartTime = time(NULL);
+	allEventState[(long)state] = state;
 	/* associate server with stream */
 	stream->data = state;
+	msg_debug(logger,Util::format("create new tcp=%p  state=%p",stream,state));
 
 	r = uv_accept(server, stream);
 	ASSERT(r == 0);
 	r = uv_read_start(stream, echo_alloc, after_read);
 
 
-	msg_info(logger,"end connection...\n");
+	msg_info(logger, "end connection...\n");
 	ASSERT(r == 0);
 }
 
 
-static void on_server_close(uv_handle_t* handle) {
-	msg_info(logger,"server socket error");
+static void on_server_close(uv_handle_t* handle)
+{
+	msg_info(logger, "server socket error");
 	ASSERT(handle == server);
 }
 
 
 
 
-static int tcp4_echo_start(int port) 
+static int tcp4_echo_start(int port)
 {
 	struct sockaddr_in addr;
 	int r;
@@ -280,11 +293,39 @@ static int tcp4_echo_start(int port)
 	return 0;
 }
 
+static int clear_idle_tcp()
+{
+
+	std::vector<long> delList;
+	map<long, EventState *>::iterator iter;
+//	long delId=0;
+//	msg_debug(logger,Util::format("allStateSize=%d",allEventState.size()));
+	for( iter = allEventState.begin();  iter != allEventState.end();   iter++) {
+		EventState * state=(EventState *)(iter->second);
+		if (state->isWork==1)
+			continue;
+		msg_debug(logger,Util::format("timer=%d/%d state=%p client handler=%p",time(NULL)-state->lastHeartTime,
+			tcp->tcpIdleSeconds,state,state->client));
+		if (time(NULL)-state->lastHeartTime>tcp->tcpIdleSeconds){
+			delList.push_back(iter->first);
+			uv_close((uv_handle_t*)state->client, on_close);
+		}
+	}
+	if (delList.size()>0){
+		for(unsigned int n=0;n<delList.size();n++){
+			allEventState.erase(delList.at(n));
+		}
+		delList.clear();
+	}
+	return 0;
+}
 
 static uv_timer_t timer_handle;
 
-static void timer_cb(uv_timer_t* handle) {
+static void timer_cb(uv_timer_t* handle)
+{
 	uv_timer_stop(&timer_handle);
+	clear_idle_tcp();
 	uv_timer_start(&timer_handle, timer_cb, 1000, 0);
 }
 
@@ -295,7 +336,7 @@ uv_prepare_t uv_prepare_sleep;
 static void idle_cb_main(uv_idle_t* handle)
 {
 
-  //static int idle_cb_called = 0;
+	//static int idle_cb_called = 0;
 	usleep(0);
 }
 #endif
@@ -308,8 +349,8 @@ int TcpServer::init()
 
 int TcpServer::startService(int port)
 {
-	logger=Logger::getLogger("TcpServer");
-	msg_info(logger,Util::format("listen port=%d",port).c_str());
+	logger = Logger::getLogger("TcpServer");
+	msg_info(logger, Util::format("listen port=%d", port).c_str());
 	loop = uv_default_loop();
 
 	if (tcp4_echo_start(port))
@@ -319,7 +360,7 @@ int TcpServer::startService(int port)
 int TcpServer::run()
 {
 
-	msg_info(logger,"run....begin....");
+	msg_info(logger, "run....begin....");
 
 	uv_timer_init(loop, &timer_handle);
 	uv_timer_start(&timer_handle, timer_cb, 1000, 0);
@@ -334,8 +375,8 @@ int TcpServer::run()
 //--------------------------------------------------------------------------------------
 TcpServer::TcpServer ()
 {
-
-}  // -----  end of method TcpServer::TcpServer  (constructor)  ----- 
+	tcp=this;
+}  // -----  end of method TcpServer::TcpServer  (constructor)  -----
 
 
 //--------------------------------------------------------------------------------------
@@ -345,7 +386,12 @@ TcpServer::TcpServer ()
 //--------------------------------------------------------------------------------------
 TcpServer::~TcpServer ()
 {
-}  // -----  end of method TcpServer::~TcpServer  (destructor)  ----- 
+}  // -----  end of method TcpServer::~TcpServer  (destructor)  -----
+void TcpServer::registerEventHandler(int cmdType,EventHandler * event)
+{
+	allEventHandler[cmdType]=event;
+	return ;
+}
 
 
 #endif // _TcpServer_CPP_

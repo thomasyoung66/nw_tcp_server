@@ -22,10 +22,12 @@
 #include <stdlib.h>
 
 #include "../lib_app/Application.h"
+#include "LoginEventHandler.h"
 
 int main(int argc,char * argv[])
 {
 	Application app(argc,argv);
+	app.registerEventHandler(0x1,new LoginEventHandler());
 	app.run();
 	return 0;
 }

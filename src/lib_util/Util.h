@@ -78,6 +78,8 @@ public:
 	static string getUserPath(const char * rootPath,const char * uId);
 	static void hexdump(const void *_data, size_t size);
 	static int sendUdp(const char * host, int port, const char * content);
+	static void setIntBit(int * val,int bit,unsigned char  value);
+	static unsigned char  getIntBit(int * val,int bit);
 	// ====================  OPERATIONS  =========================================
 	// ====================  ACCESS      =========================================
 	// ====================  INQUIRY     =========================================

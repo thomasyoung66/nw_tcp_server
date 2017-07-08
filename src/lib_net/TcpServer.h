@@ -1,19 +1,19 @@
 /*
  * =====================================================================================
- * 
+ *
  *        Filename:  TCPSERVER
- * 
- *     Description:  
- * 
+ *
+ *     Description:
+ *
  *         Version:  1.0
  *         Created:  07/04/2017 12:31:45 AM PDT
  *        Revision:  none
  *        Compiler:  gcc
- * 
+ *
  *          Author:  YangLiuShun (Thomas Young)
  *         Company:  no name company
  *           Email:  65619882@qq.com
- * 
+ *
  * =====================================================================================
  */
 
@@ -21,40 +21,45 @@
 
 // =====================================================================================
 //        Class:  TcpServer
-//  Description:  
+//  Description:
 // =====================================================================================
 
 #ifndef _TcpServer_H_
 #define _TcpServer_H_
 
 #include "../lib_util/Log.h"
+#include "EventHandler.h"
 class TcpServer
 {
 
-  public:
+public:
 
-    // ====================  LIFECYCLE   ========================================= 
+	// ====================  LIFECYCLE   =========================================
 
-    TcpServer ();                    // constructor 
-    ~TcpServer ();                   // destructor 
+	TcpServer ();                    // constructor
+	~TcpServer ();                   // destructor
 
-    // ====================  OPERATORS   ========================================= 
+	// ====================  OPERATORS   =========================================
 
 
-	virtual const char * class_name() const { return "TcpServer"; };
+	virtual const char * class_name() const
+	{
+		return "TcpServer";
+	};
 	int init();
-	int startService(int port);    
+	int startService(int port);
 	int run();
 	int workThreads;//最大工作线程
 	int tcpIdleSeconds;//tcp最大空闲时间
-	// ====================  OPERATIONS  ========================================= 
+	void registerEventHandler(int cmdType,EventHandler * event);
+	// ====================  OPERATIONS  =========================================
 
-    // ====================  ACCESS      ========================================= 
+	// ====================  ACCESS      =========================================
 
-    // ====================  INQUIRY     ========================================= 
+	// ====================  INQUIRY     =========================================
 
-  protected:
+protected:
 
-  private:
-};  // -----  end of class  TcpServer  ----- 
+private:
+};  // -----  end of class  TcpServer  -----
 #endif // _TcpServer_H_

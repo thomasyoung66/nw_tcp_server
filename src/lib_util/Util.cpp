@@ -411,6 +411,17 @@ void Util::hexdump(const void *_data, size_t size)
     }
 
 }
+void Util::setIntBit(int * val,int bit,unsigned char  value)
+{
+	unsigned char * pval=(unsigned char *)val;
+	pval[bit]=value;
+}
+unsigned char  Util::getIntBit(int * val,int bit)
+{
+	
+	unsigned char * pval=(unsigned char *)val;
+	return pval[bit];
+}
 
 #endif
 

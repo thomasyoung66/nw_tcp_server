@@ -1,15 +1,15 @@
 /*
  * =====================================================================================
- * 
+ *
  *        Filename:  GLOBAL
- * 
- *     Description:  
- * 
+ *
+ *     Description:
+ *
  *         Version:  1.0
  *         Created:  07/04/2017 12:29:34 AM PDT
  *        Revision:  none
  *        Compiler:  gcc
- * 
+ *
  *          Author:  YangLiuShun (Thomas Young), 65619882@qq.com
  *         Company:  no name company
  * =====================================================================================
@@ -17,7 +17,7 @@
 
 // =====================================================================================
 //        Class:  Global
-//  Description:  
+//  Description:
 // =====================================================================================
 
 #ifndef _Global_CPP_
@@ -33,7 +33,7 @@
 //--------------------------------------------------------------------------------------
 Global::Global ()
 {
-}  // -----  end of method Global::Global  (constructor)  ----- 
+}  // -----  end of method Global::Global  (constructor)  -----
 
 //--------------------------------------------------------------------------------------
 //       Class:  Global
@@ -42,7 +42,7 @@ Global::Global ()
 //--------------------------------------------------------------------------------------
 Global::Global ( const Global &other )
 {
-}  // -----  end of method Global::Global  (copy constructor)  ----- 
+}  // -----  end of method Global::Global  (copy constructor)  -----
 
 //--------------------------------------------------------------------------------------
 //       Class:  Global
@@ -51,7 +51,7 @@ Global::Global ( const Global &other )
 //--------------------------------------------------------------------------------------
 Global::~Global ()
 {
-}  // -----  end of method Global::~Global  (destructor)  ----- 
+}  // -----  end of method Global::~Global  (destructor)  -----
 
 //--------------------------------------------------------------------------------------
 //       Class:  Global
@@ -61,10 +61,9 @@ Global::~Global ()
 const Global&
 Global::operator = ( const Global &other )
 {
-  if(this!=&other)
-  {
-  }
-  return *this;
-}  // -----  end of method Global::operator =  (assignment operator)  ----- 
+	if(this != &other) {
+	}
+	return *this;
+}  // -----  end of method Global::operator =  (assignment operator)  -----
 
 #endif // _Global_CPP_

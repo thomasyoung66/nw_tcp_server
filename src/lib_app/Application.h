@@ -1,19 +1,19 @@
 /*
  * =====================================================================================
- * 
+ *
  *        Filename:  APPLICATION
- * 
- *     Description:  
- * 
+ *
+ *     Description:
+ *
  *         Version:  1.0
  *         Created:  07/04/2017 12:26:40 AM PDT
  *        Revision:  none
  *        Compiler:  gcc
- * 
+ *
  *          Author:  YangLiuShun (Thomas Young)
  *         Company:  no name company
  *           Email:  65619882@qq.com
- * 
+ *
  * =====================================================================================
  */
 
@@ -21,7 +21,7 @@
 
 // =====================================================================================
 //        Class:  Application
-//  Description:  
+//  Description:
 // =====================================================================================
 
 #ifndef _Application_H_
@@ -34,42 +34,48 @@ extern "C" {
 #include "../lib_util/Log.h"
 #include "../lib_util/Util.h"
 #include "../lib_net/TcpServer.h"
+#include "../lib_net/EventHandler.h"
 class Application
 {
 
-  public:
+public:
 
-    // ====================  LIFECYCLE   ========================================= 
+	// ====================  LIFECYCLE   =========================================
 
-    Application (int argc,char * argv[]);                    // constructor 
-    Application ( const Application &other );  // copy constructor 
-    ~Application ();                   // destructor 
+	Application (int argc, char * argv[]);                   // constructor
+	Application ( const Application &other );  // copy constructor
+	~Application ();                   // destructor
 
-    // ====================  OPERATORS   ========================================= 
+	// ====================  OPERATORS   =========================================
 
-    const Application& operator = ( const Application &other );  // assignemnt operator 
+	const Application& operator = ( const Application &other );  // assignemnt operator
 
-	virtual const char * class_name() const { return "Application"; };
+	virtual const char * class_name() const
+	{
+		return "Application";
+	};
 
-	Global g;    
+	Global g;
 	int run();
 	int init();
-	// ====================  OPERATIONS  ========================================= 
+	void registerEventHandler(int cmdType,EventHandler * event);
+	// ====================  OPERATIONS  =========================================
 
-    // ====================  ACCESS      ========================================= 
+	// ====================  ACCESS      =========================================
 
-    // ====================  INQUIRY     ========================================= 
+	// ====================  INQUIRY     =========================================
 	int initConfig(const char * path);
-	Log * getLog(){
+	Log * getLog()
+	{
 		return &log;
 	}
-  protected:
+protected:
 
-  private:
-		Log log;
-		TcpServer tcpServer;
-		dictionary  *   ini ;
-	 LoggerPtr logger ;
-};  // -----  end of class  Application  ----- 
+private:
+	Log log;
+	TcpServer tcpServer;
+	dictionary  *   ini ;
+	LoggerPtr logger ;
+};  // -----  end of class  Application  -----
 extern Application * app;
 #endif // _Application_H_

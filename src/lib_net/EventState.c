@@ -22,6 +22,7 @@
 EventState * alloc_init_event_state()
 {
 	EventState * state=(EventState *)malloc(sizeof(EventState));
+	printf("malloc=%p\n",state);
 	if (state==NULL)
 		return NULL;
 	state->lastHeartTime=0;
@@ -30,7 +31,17 @@ EventState * alloc_init_event_state()
 }
 void free_event_state(EventState * state)
 {
+	printf("free=%p\n",state);
 	if (state!=NULL)
 		free(state);
+}
+void initNwInputStream(NwInputStream * stream)
+{
+	stream->buffer=NULL;	
+	return ;
+}
+void freeNwInputStream(NwInputStream * stream)
+{
+	return ;
 }
 #endif // _EventState_H_
